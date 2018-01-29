@@ -1,0 +1,15 @@
+// Scaffolding
+.page{
+	display: grid;
+	grid-template-rows: 64px auto;
+	grid-template-columns: 1fr;
+	height: 100vh;
+}
+
+// Header
+header{
+	grid-column-start:1;
+	grid-column-end: 3;
+	grid-row-start: 0;
+	grid-row-end: 2;
+}
