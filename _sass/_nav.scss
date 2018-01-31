@@ -1,18 +1,12 @@
-.main-header,
-.nav {
-	display: flex;
-	flex-direction: column;
-}
-
-.main-header{
+header{
 	border-bottom: 1px solid #ebecec;
-	padding-bottom: 2em;
-	padding-top: 2em;
+	padding-left: 2rem;
+	img{
+		width: 110px;
+		height: 100%;
+	}
 }
 
-.site-logo{
-	width: 110px;
-}
 
 .nav{
 	margin-top: 1.5rem;
