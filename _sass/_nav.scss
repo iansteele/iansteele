@@ -1,25 +1,31 @@
 header {
-	background-color: $black;
-	border-bottom: 1px solid #ebecec;
+	background-color: $white;
 	padding: 2rem;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 	img {
-		width: 110px;
+		display: block;
+		width: 160px;
 		height: auto;
 	}
 }
 
-.nav {
-	margin-top: 1.5rem;
-
+nav {
+	margin-top: 2rem;
+	display: flex;
 	a {
 		display: block;
+		flex-grow: 1;
 		font-size: 1.25rem;
-		font-weight: 500;
+		font-weight: 700;
 		text-align: center;
-		padding: .4em;
+		padding: 1rem;
 	}
 		:hover {
 			color:tomato;
 		}
+
+
+
 }
