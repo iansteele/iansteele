@@ -1,0 +1,34 @@
+$font-family-display: 'Alfa Slab One', cursive;
+$font-family-text:	'Fredoka One', sans-serif;
+
+.font-size-small {
+	font-size: .75rem;
+}
+
+.font-size-regular {
+	font-size: 1rem;
+}
+
+.font-size-large {
+	font-size: 1.5rem;
+}
+
+.headline {
+	color: black;
+	font-size: 2.25rem;
+  font-family: $font-family-display;
+  letter-spacing: .25rem;
+  line-height: 4rem;
+  text-align: left;
+  h1{
+  	margin: 0;
+  }
+}
+
+@media (min-width: 768px){
+  .headline{
+    font-size: 3rem;
+    letter-spacing: .25rem;
+    line-height: 5.5rem;
+  }
+}

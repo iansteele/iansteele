@@ -2,15 +2,15 @@ main {
 }
 
 .intro{
-	grid-area: intro;
+	padding: 24px;
+	text-align: center;
 }
 
 .work{
 	grid-area: work;
+	height: 100vh;
 }
 .project-thumb{
 	background:tomato;
-	display: inline-block;
 	padding-bottom: 75%;
-	width: 100%;
 }

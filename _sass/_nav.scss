@@ -9,20 +9,25 @@ header {
 		width: 160px;
 		height: auto;
 	}
+	nav {
+		margin-top: 1rem;
+		display: flex;
+		a {
+			display: block;
+			flex-grow: 1;
+			font-size: 1.25rem;
+			font-weight: 700;
+			text-align: center;
+			padding: 1rem;
+		}
+			:hover {
+				color:tomato;
+			}
+	}
 }
 
-nav {
-	margin-top: 2rem;
-	display: flex;
-	a {
-		display: block;
-		flex-grow: 1;
-		font-size: 1.25rem;
-		font-weight: 700;
-		text-align: center;
-		padding: 1rem;
+@media (min-width: 768px){
+	header{
+		flex-direction: row;
 	}
-		:hover {
-			color:tomato;
-		}
 }
