@@ -4,6 +4,8 @@ main {
 .intro{
 	padding: 24px;
 	text-align: center;
+	font-size: 24px;
+	font-weight: 500;
 }
 
 .work{
@@ -11,6 +13,14 @@ main {
 	height: 100vh;
 }
 .project-thumb{
-	background:tomato;
-	padding-bottom: 75%;
+	background: url(https://i.imgur.com/Pjess.gif;);
+	background-size: cover;
+	padding-bottom: 60%;
+	display: flex;
+	flex-direction: column;
+	.project-title{
+		background-color: tomato;
+		vertical-align: middle;
+		color: $white;
+	}
 }

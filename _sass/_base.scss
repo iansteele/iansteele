@@ -9,15 +9,11 @@
 }
 
 body {
-	background-color: #111;
+	background-color: $white;
   color: #666;
   font-size: 16px;
 	margin: 0;
-  /*font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  /*font-family: 'Shrikhand', cursive;*/
   font-family: $font-family-text;
-	/*font-family: 'Alfa Slab One', cursive;*/
-	/*font-family: 'Fredoka One', cursive;*/
   line-height: 1.5; 
 }
 

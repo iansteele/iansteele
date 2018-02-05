@@ -1,24 +1,32 @@
 header {
 	background-color: $white;
-	padding: 2rem;
 	text-align: center;
+	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
-	img {
-		display: block;
-		width: 160px;
-		height: auto;
+
+	.logo {
+		color: black;
+		font-size: 1rem;
+	  font-family: $font-family-display;
+	  font-weight: 900;
+	  line-height: 3rem;
+	  text-align: center;
+	  h1{
+	  	margin: 0;
+	  }
 	}
+
 	nav {
-		margin-top: 1rem;
 		display: flex;
 		a {
 			display: block;
+			color: tomato;
 			flex-grow: 1;
-			font-size: 1.25rem;
-			font-weight: 700;
+			font-size: 1rem;
+			font-weight: 400;
 			text-align: center;
-			padding: 1rem;
+			padding: .5rem;
 		}
 			:hover {
 				color:tomato;

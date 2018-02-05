@@ -1,5 +1,5 @@
-$font-family-display: 'Alfa Slab One', cursive;
-$font-family-text:	'Fredoka One', sans-serif;
+$font-family-display: 'Montserrat', sans-serif;
+$font-family-text:	'Neuton', serif;
 
 .font-size-small {
 	font-size: .75rem;
@@ -17,6 +17,7 @@ $font-family-text:	'Fredoka One', sans-serif;
 	color: black;
 	font-size: 2.25rem;
   font-family: $font-family-display;
+  font-weight: 900;
   letter-spacing: .25rem;
   line-height: 4rem;
   text-align: left;
