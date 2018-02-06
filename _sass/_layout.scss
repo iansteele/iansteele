@@ -16,7 +16,7 @@ header{
 main{
 	grid-area: main;
 	display: grid;
-	grid-template-rows: minmax(200px, auto) auto;
+	grid-template-rows: auto;
 	grid-template-columns: auto;
 	grid-template-areas: 
 		"intro"

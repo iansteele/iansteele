@@ -18,9 +18,21 @@ main {
 	padding-bottom: 60%;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 	.project-title{
 		background-color: tomato;
-		vertical-align: middle;
 		color: $white;
+		height: 100%;
+		opacity: 0;
+		position: absolute;
+		transition: opacity .2ms;
+		vertical-align: middle;
+		width: 100%;
+	}
+	&:hover {
+		.project-title {
+			opacity: 100;
+			transition: opacity .2s ease;
+		}
 	}
 }
