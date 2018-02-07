@@ -1,20 +1,35 @@
-.intro{
-	padding: 24px;
-	text-align: center;
-	font-size: 24px;
-	font-weight: 500;
+.bio{
+	position: relative;
+	img{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.intro{
+		padding: 2rem 0;
+		text-align: center;
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
 }
 
 .work{
 	grid-area: work;
-	height: 100vh;
+	border-top: 1px solid $brand-secondary;
+	padding-top: 1rem;
 }
 .project-thumb{
-	background: url(https://i.imgur.com/Pjess.gif;);
-	background-size: cover;
 	padding-bottom: 67.5%;
 	flex-direction: column;
 	position: relative;
+	img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 	.project-title {
 		align-items: center;
 		background-color: rgba(0,0,0,.75);

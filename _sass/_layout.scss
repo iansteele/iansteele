@@ -38,7 +38,7 @@ main{
 
 @media (min-width: 768px){
 	main{
-		grid-template-rows: minmax(300px, auto) auto;
+		grid-template-rows: auto;
 	}
 	.work{
 		grid-template-columns: 1fr 1fr;
@@ -51,5 +51,11 @@ main{
 @media (min-width: 960px){
 	.work{
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1200px){
+	.work{
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
