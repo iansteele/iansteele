@@ -1,6 +1,3 @@
-main {
-}
-
 .intro{
 	padding: 24px;
 	text-align: center;
@@ -15,14 +12,17 @@ main {
 .project-thumb{
 	background: url(https://i.imgur.com/Pjess.gif;);
 	background-size: cover;
-	padding-bottom: 60%;
-	display: flex;
+	padding-bottom: 67.5%;
 	flex-direction: column;
 	position: relative;
-	.project-title{
-		background-color: tomato;
+	.project-title {
+		align-items: center;
+		background-color: rgba(0,0,0,.75);
 		color: $white;
+		display: flex;
+		font-size: 1.5rem;
 		height: 100%;
+		justify-content: center;
 		opacity: 0;
 		position: absolute;
 		transition: opacity .2ms;
@@ -31,7 +31,7 @@ main {
 	}
 	&:hover {
 		.project-title {
-			opacity: 100;
+			opacity: 50;
 			transition: opacity .2s ease;
 		}
 	}

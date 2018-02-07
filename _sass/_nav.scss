@@ -1,24 +1,25 @@
 header {
-	background-color: $white;
 	text-align: center;
+  font-family: $font-family-display;
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
 
 	.logo {
-		color: black;
+		color: $brand-secondary;
 		font-size: 1rem;
-	  font-family: $font-family-display;
 	  font-weight: 900;
 	  line-height: 3rem;
 	  text-align: center;
-	  h1 , img {
+	  	h1 , svg {
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  }
-	  img{
-	  	width: 60px;
-	  	height: 60px;
+	  svg{
+	  	border-radius: 50%;
+	  	fill: $brand-secondary;
+	  	width: 48px;
+	  	height: 48px;
 	  	margin-right: .5rem;
 	  }
 	}
@@ -26,11 +27,12 @@ header {
 	nav {
 		display: flex;
 		a {
+			align-self: center;
 			display: block;
-			color: tomato;
+			color: $brand-secondary;
 			flex-grow: 1;
 			font-size: 1rem;
-			font-weight: 400;
+			font-weight: 800;
 			text-align: center;
 			padding: .5rem;
 		}
@@ -43,5 +45,15 @@ header {
 @media (min-width: 768px){
 	header{
 		flex-direction: row;
+		.logo{
+			justify-self: flex-start;
+			margin-right: auto;
+		}
+		nav{
+			justify-self: flex-end; 
+			a{
+				padding: .5rem 1rem;
+			}
+		}
 	}
 }
