@@ -1,53 +1,84 @@
-.bio{
+.bio {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  padding: 3rem 1rem;
 	position: relative;
 	img{
 		position: absolute;
 		right: 0;
 		bottom: 0;
 	}
-	.intro{
-		padding: 2rem 0;
-		text-align: center;
-		font-size: 1.6rem;
-		font-weight: 500;
-	}
 }
 
-.work{
+.bio-intro {
+	color: $brand-secondary;
+	text-align: left;
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 0;
+	margin-left: 1rem;
+}
+
+.bio-description {
+	color: $brand-primary;
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0;
+	margin-left: 1rem;
+	max-width: 400px;
+}
+
+.work {
 	grid-area: work;
-	border-top: 1px solid $brand-secondary;
 	padding-top: 1rem;
 }
-.project-thumb{
+.project-thumb {
 	padding-bottom: 67.5%;
 	flex-direction: column;
 	position: relative;
+	overflow: hidden;
 	img{
 		display: block;
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		top: 0;
+		transition: transform .5s ease;
 		left: 0;
 	}
 	.project-title {
 		align-items: center;
 		background-color: rgba(0,0,0,.75);
+		background-blend-mode: multiply;
 		color: $white;
 		display: flex;
-		font-size: 1.5rem;
 		height: 100%;
 		justify-content: center;
 		opacity: 0;
 		position: absolute;
-		transition: opacity .2ms;
+		transition: opacity .5s ease;
 		vertical-align: middle;
 		width: 100%;
+		p{
+			font-size: 1.25rem;
+		}
 	}
 	&:hover {
+		img{
+			transform: scale(1.05);
+			transform-origin: center;
+			transition: transform .5s ease;
+		}
 		.project-title {
 			opacity: 50;
-			transition: opacity .2s ease;
+			transition: opacity .5s ease;
 		}
+	}
+}
+@media (min-width: 768px){
+	.intro {
+		font-size: 4rem;
 	}
 }

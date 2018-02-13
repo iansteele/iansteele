@@ -1,9 +1,11 @@
 header {
+	background-color:#333;
 	text-align: center;
   font-family: $font-family-display;
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
+	padding: .5rem 0;
 
 	.logo {
 		color: $white;
@@ -18,8 +20,8 @@ header {
 	  svg{
 	  	border-radius: 50%;
 	  	fill: $white;
-	  	width: 48px;
-	  	height: 48px;
+	  	width: 32px;
+	  	height: 32px;
 	  	margin-right: .5rem;
 	  }
 	}
@@ -33,8 +35,9 @@ header {
 			flex-grow: 1;
 			font-size: 1rem;
 			font-weight: 800;
+			padding: 1rem;
 			text-align: center;
-			padding: .5rem;
+			
 		}
 			:hover {
 				color:tomato;
@@ -45,12 +48,14 @@ header {
 @media (min-width: 768px){
 	header{
 		flex-direction: row;
+		padding: .5rem 2rem;
 		.logo{
 			justify-self: flex-start;
 			margin-right: auto;
 		}
 		nav{
-			justify-self: flex-end; 
+			justify-self: flex-end;
+			margin-bottom: 0;
 			a{
 				padding: .5rem 1rem;
 			}

@@ -2,7 +2,6 @@
 .page{
 	display: grid;
 	grid-template-rows: auto;
-	padding: 1rem;
 	grid-template-areas: 
 		"header"
 		"main";
@@ -19,12 +18,11 @@ main{
 	grid-template-rows: auto;
 	grid-template-columns: auto;
 	grid-template-areas: 
-		"intro"
+		"bio"
 		"work";
 }
-.intro{
-	grid-area: intro;
-	grid-area: intro;
+.bio{
+	grid-area: bio;
 	grid-row: 1 / 2;
 }
 .work{
