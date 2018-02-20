@@ -1,8 +1,9 @@
 .bio {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 	justify-content: center;
-  padding: 3rem 1rem;
+  /*padding: 3rem 1rem;*/
 	position: relative;
 	img{
 		position: absolute;
@@ -11,23 +12,17 @@
 	}
 }
 
-.bio-intro {
+.highlight {
 	color: $brand-secondary;
-	text-align: left;
-	font-size: 2rem;
-	font-weight: 700;
-	margin: 0;
-	margin-left: 1rem;
 }
 
 .bio-description {
 	color: $brand-primary;
 	text-align: left;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 500;
-	margin: 0;
-	margin-left: 1rem;
-	max-width: 400px;
+	margin: 2rem;
+	max-width: 720px;
 }
 
 .work {
@@ -35,7 +30,7 @@
 	padding-top: 1rem;
 }
 .project-thumb {
-	padding-bottom: 67.5%;
+	padding-bottom: 75%;
 	flex-direction: column;
 	position: relative;
 	overflow: hidden;
@@ -50,7 +45,7 @@
 	}
 	.project-title {
 		align-items: center;
-		background-color: rgba(0,0,0,.75);
+		background-color: rgba(0,0,0,.5);
 		background-blend-mode: multiply;
 		color: $white;
 		display: flex;
@@ -58,7 +53,7 @@
 		justify-content: center;
 		opacity: 0;
 		position: absolute;
-		transition: opacity .5s ease;
+		transition: opacity 1s ease;
 		vertical-align: middle;
 		width: 100%;
 		p{

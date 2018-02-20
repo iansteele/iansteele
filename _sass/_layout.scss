@@ -15,7 +15,7 @@ header{
 main{
 	grid-area: main;
 	display: grid;
-	grid-template-rows: auto;
+	grid-template-rows: minmax(400px,65vh) auto;
 	grid-template-columns: auto;
 	grid-template-areas: 
 		"bio"
@@ -28,16 +28,12 @@ main{
 .work{
 	grid-area: work;
 	grid-row: 2 / 3;
-	grid-row-gap: 1rem;
 	display: grid;
   grid-template-columns: 1fr;
   grid-row-template: min-content;
 }
 
 @media (min-width: 768px){
-	main{
-		grid-template-rows: auto;
-	}
 	.work{
 		grid-template-columns: 1fr 1fr;
 		grid-template-columns: repeat(2, 1fr);
