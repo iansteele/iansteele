@@ -1,28 +1,98 @@
-.bio {
+.hero {
+	background: $black;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	justify-content: center;
-  /*padding: 3rem 1rem;*/
+	justify-content: top;
+  padding: 1rem 2rem;
 	position: relative;
-	img{
+	
+	> img {
 		position: absolute;
 		right: 0;
 		bottom: 0;
+		height: 40%;
+		width: auto;
+		display: block;
+		z-index: 1;
+	}
+
+	.bio-headline,
+	.bio-description,
+	.social-link {
+		z-index: 2;
 	}
 }
 
 .highlight {
-	color: $brand-secondary;
+	color: $light-gray;
+}
+
+
+.bio {
+	max-width: 75%;
+}
+.bio-headline {
+	font-size: 2rem;
+	font-weight: 900;
+	line-height: 1.25;
+	color: $white;
+	margin-bottom: 1rem;
+	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 5s; /* Firefox < 16 */
+      -ms-animation: fadein 5s; /* Internet Explorer */
+       -o-animation: fadein 5s; /* Opera < 12.1 */
+          animation: fadein 5s;
+	
+	span{
+		color: $darker-gray;
+	}
 }
 
 .bio-description {
-	color: $brand-primary;
+	color: $medium-gray;
 	text-align: left;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 500;
-	margin: 2rem;
 	max-width: 720px;
+	margin-bottom: 1.5rem;
+	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 6s; /* Firefox < 16 */
+      -ms-animation: fadein 6s; /* Internet Explorer */
+       -o-animation: fadein 6s; /* Opera < 12.1 */
+          animation: fadein 6s;
+}
+
+.social_link {
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 1rem;
+	-webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 7s; /* Firefox < 16 */
+      -ms-animation: fadein 7s; /* Internet Explorer */
+       -o-animation: fadein 7s; /* Opera < 12.1 */
+          animation: fadein 7s;
+
+	a {
+		display: block;
+		height: 40px;
+		text-align: center;
+		padding: .25rem;
+		width: 40px;
+	}	
+
+	svg {
+	 	fill: $brand-secondary;
+		height: 100%;
+		width: 100%;
+		transition: fill .25s ease;
+	}
+}
+
+.social_link:hover {
+	svg {
+	 	fill: $white;
+	}
 }
 
 .work {
@@ -45,7 +115,7 @@
 	}
 	.project-title {
 		align-items: center;
-		background-color: rgba(0,0,0,.5);
+		background-color: $brand-primary;
 		background-blend-mode: multiply;
 		color: $white;
 		display: flex;
@@ -57,9 +127,16 @@
 		vertical-align: middle;
 		width: 100%;
 		p{
-			font-size: 1.25rem;
+			font-size: 2rem;
+			font-weight: 800;
+			position: absolute;
+			left: 24px;
+			bottom: 36px;
+			padding-bottom: 8px;
+			border-bottom: $brand-secondary 4px solid;
 		}
 	}
+
 	&:hover {
 		img{
 			transform: scale(1.05);
@@ -67,13 +144,105 @@
 			transition: transform .5s ease;
 		}
 		.project-title {
-			opacity: 50;
+			opacity: 1;
 			transition: opacity .5s ease;
 		}
 	}
 }
+
+//--------------------------
+// Footer
+//--------------------------
+
+.footer {
+	background: $black;
+	border-top: 8px solid $brand-primary;
+	padding: 3rem;
+	display: block;
+	text-align: center;
+}
+
+
+//--------------------------
+// CTAs
+//--------------------------
+
+.cta {
+	.cta--text {
+		margin-bottom: 1rem;
+	}
+
+	.btn {
+	  background: $brand-secondary;
+	  color: $black;
+	  padding: .75rem 3rem;
+	  text-align: center;
+	  transition: all .5s ease;
+
+	  &:hover{
+	  	background: $white;
+	  	border-radius: 2rem;
+	  }
+	}
+}
+
+//--------------------------
+// CSS Animations
+//--------------------------
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 @media (min-width: 768px){
+
+	.hero {
+		justify-content: center;
+		padding: 3rem 6rem;
+		> img {
+			height: 110%;
+		}
+	}
+
+	.bio {
+		max-width: 55%;
+	}
+
+	.bio-headline {
+		font-size: 5rem;
+	}
+
+	.bio-description {
+		margin-bototm: 2rem;
+	}
+
 	.intro {
 		font-size: 4rem;
+	}
+
+	.social_link {
+
+		a {
+			height: 48px;
+			width: 48px;
+		}	
+
+	}
+
+}
+
+@media (min-width: 1200px){
+
+	.bio-headline {
+		font-size: 3rem;
+	}
+
+	.bio-description {
+		font-size: 1.125rem;
+	}
+
+	.work {
+		padding: 3rem;
 	}
 }
