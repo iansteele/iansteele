@@ -1,5 +1,10 @@
-$font-family-display: 'Montserrat', sans-serif;
+$font-display: 'Merriweather', san-serif;
+/*$font-display: 'Merriweather', san-serif;*/
 $font-primary: 'Montserrat', serif;
+
+* {
+  line-height: 1.7;
+}
 
 .font-size-small {
 	font-size: .75rem;
@@ -20,8 +25,8 @@ $font-primary: 'Montserrat', serif;
   font-weight: 900;
   letter-spacing: .25rem;
   line-height: 4rem;
-  text-align: left;
-  h1{
+
+  h1 {
   	margin: 0;
   }
 }

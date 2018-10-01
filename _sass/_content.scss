@@ -3,12 +3,10 @@
 --------------------------- */
 
 .hero {
-	background: $black;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	justify-content: top;
-  padding: 1rem 2rem;
+  	padding: 1rem;
 	position: relative;
 	
 	> img {
@@ -21,27 +19,25 @@
 		z-index: 1;
 	}
 
-	.bio-headline,
+	.headline,
 	.bio-description,
 	.social-link {
 		z-index: 2;
 	}
 }
 
-.highlight {
-	color: $light-gray;
-}
-
-
 .bio {
-	max-width: 75%;
+	text-align: left;
+	margin-bottom: 1.5rem;
 }
-.bio-headline {
-	font-size: 2rem;
+
+.headline {
+	font-size: 3rem;
 	font-weight: 900;
 	line-height: 1.25;
-	color: $white;
-	margin-bottom: 1rem;
+	font-family: $font-display;
+	color: #555;
+	margin-bottom: .5rem;
 	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 5s; /* Firefox < 16 */
       -ms-animation: fadein 5s; /* Internet Explorer */
@@ -54,12 +50,10 @@
 }
 
 .bio-description {
-	color: $medium-gray;
-	text-align: left;
+	color: $white;
 	font-size: 1rem;
 	font-weight: 500;
 	max-width: 720px;
-	margin-bottom: 1.5rem;
 	-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 6s; /* Firefox < 16 */
       -ms-animation: fadein 6s; /* Internet Explorer */
@@ -91,6 +85,7 @@
 		width: 100%;
 		transition: fill .25s ease;
 	}
+
 }
 
 .social_link:hover {
@@ -99,67 +94,12 @@
 	}
 }
 
-.work {
-	grid-area: work;
-	padding-top: 1rem;
-}
-.project-thumb {
-	padding-bottom: 75%;
-	flex-direction: column;
-	position: relative;
-	overflow: hidden;
-	img{
-		display: block;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		transition: transform .5s ease;
-		left: 0;
-	}
-	.project-title {
-		align-items: center;
-		background-color: $brand-primary;
-		background-blend-mode: multiply;
-		color: $white;
-		display: flex;
-		height: 100%;
-		justify-content: center;
-		opacity: 0;
-		position: absolute;
-		transition: opacity 1s ease;
-		vertical-align: middle;
-		width: 100%;
-		p{
-			font-size: 2rem;
-			font-weight: 800;
-			position: absolute;
-			left: 24px;
-			bottom: 36px;
-			padding-bottom: 8px;
-			border-bottom: $brand-secondary 4px solid;
-		}
-	}
-
-	&:hover {
-		img{
-			transform: scale(1.05);
-			transform-origin: center;
-			transition: transform .5s ease;
-		}
-		.project-title {
-			opacity: 1;
-			transition: opacity .5s ease;
-		}
-	}
-}
 
 //--------------------------
 // Footer
 //--------------------------
 
 .footer {
-	background: $black;
 	border-top: 8px solid $brand-primary;
 	padding: 3rem;
 	display: block;
@@ -213,7 +153,7 @@
 		max-width: 55%;
 	}
 
-	.bio-headline {
+	.headline {
 		font-size: 5rem;
 	}
 
@@ -238,7 +178,7 @@
 
 @media (min-width: 1200px){
 
-	.bio-headline {
+	.headline {
 		font-size: 3rem;
 	}
 
