@@ -103,5 +103,5 @@ header { text-align: center; font-family: "Brandon-Grotesque", san-serif; text-t
   .logo h1 { font-size: 1.5rem; }
   nav { justify-self: flex-end; margin-bottom: 0; }
   nav a { padding: .5rem 1rem; } }
-@media (min-width: 1200px) { header { flex-direction: row; padding: 1rem 2rem; }
+@media (min-width: 1200px) { header { flex-direction: row; }
   .logo { margin-bottom: 0; } }
