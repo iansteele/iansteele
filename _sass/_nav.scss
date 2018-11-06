@@ -1,62 +1,65 @@
 header {
-	background-color: $black;
 	text-align: center;
-  font-family: $font-family-display;
+  	font-family: $font-display;
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
-	padding-top: 1rem;
+	padding: 2rem 0 1rem 0;
 	z-index: 10;
 }
 
 .logo {
 	color: $white;
 	font-size: 1rem;
-  font-weight: 900;
-  line-height: 3rem;
-  margin-bottom: .5rem;
-  text-align: center;
-  	h1 , svg {
-  	display: inline-block;
+	font-weight: 900;
+	text-align: center;
+	padding-top: 1rem;
+	
+	h1,
+	svg {
   	vertical-align: middle;
   }
+
+  h1 {
+  	font-size: 1.25rem;
+  	color: $brand-secondary;
+  	letter-spacing: .125rem;
+  	margin: 0;
+	line-height: 3;
+  }
+
   svg{
   	border-radius: 50%;
   	fill: $white;
-  	width: 36px;
-  	height: 36px;
-  	margin-right: .5rem;
+  	width: 80px;
+  	height: 80px;
   }
-}
-
-nav {
-	display: flex;
-	margin-bottom: .5rem;
-	a {
-		align-self: center;
-		display: block;
-		color: $brand-secondary;
-		flex-grow: 1;
-		font-size: 1rem;
-		font-weight: 800;
-		padding: 1rem;
-		text-align: center;
-		
-	}
 }
 
 @media (min-width: 768px){
 	header{
 		flex-direction: row;
 		padding: .5rem 1rem;
-		.logo{
-			justify-self: flex-start;
-			margin-right: auto;
-		}
+		justify-content: center;
 	}
 
 	.logo {
 	  margin-bottom: 0;
+
+	  svg,
+	  h1 {
+	  	display: inline-block;
+	  }
+
+	  svg {
+	  	height: 48px;
+	  	width: 48px;
+	  	margin-right: 1rem;
+	  }
+
+	  h1 {
+	  	font-size: 1.5rem;
+	  }
 	}
 	nav{
 		justify-self: flex-end;

@@ -11,11 +11,11 @@
 }
 
 body {
-	background-color: $white;
+	background-color: $brand-primary;
   color: $white;
   font-size: 16px;
 	margin: 0;
-  font-family: $font-primary;
+  font-family: $font-display;
   line-height: 1.5; 
 }
 
@@ -37,7 +37,7 @@ main {
 
 a {
   color: $brand-secondary;
-  font-weight: 400;
+  font-weight: bold;
   display: inline-block;
   &:hover {
     color: white;

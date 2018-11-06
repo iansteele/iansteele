@@ -18,7 +18,7 @@ header {
 main {
 	grid-area: main;
 	display: grid;
-	grid-template-rows: minmax(calc(100vh - 80px), auto) auto;
+	grid-template-rows: minmax(calc(100vh - 312px), auto) auto;
 	grid-template-columns: auto;
 	grid-template-areas: 
 		"hero"
@@ -43,8 +43,8 @@ footer {
 
 @media (min-width: 768px){
 
-	.main {
-		grid-template-rows: minmax(calc(100vh - 64px), auto) auto;
+	main {
+		grid-template-rows: minmax(calc(100vh - 212px), auto) auto;
 	}
 
 	.work{
@@ -56,7 +56,14 @@ footer {
 }
 
 @media (min-width: 960px){
+
 	.work{
 		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1200px) {
+	main {
+		grid-template-rows: minmax(calc(100vh - 228px), auto) auto;
 	}
 }
