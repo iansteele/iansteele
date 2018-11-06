@@ -1,10 +1,10 @@
 header {
 	text-align: center;
-  font-family: $font-display;
+  	font-family: $font-display;
 	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem 0;
+	padding: 2rem 0 1rem 0;
 	z-index: 10;
 }
 
@@ -21,11 +21,11 @@ header {
   }
 
   h1 {
-  	font-size: .825rem;
+  	font-size: 1.25rem;
   	color: $brand-secondary;
   	letter-spacing: .125rem;
   	margin: 0;
-		line-height: 3;
+	line-height: 3;
   }
 
   svg{
@@ -40,14 +40,26 @@ header {
 	header{
 		flex-direction: row;
 		padding: .5rem 1rem;
-		.logo{
-			justify-self: flex-start;
-			margin-right: auto;
-		}
+		justify-content: center;
 	}
 
 	.logo {
 	  margin-bottom: 0;
+
+	  svg,
+	  h1 {
+	  	display: inline-block;
+	  }
+
+	  svg {
+	  	height: 48px;
+	  	width: 48px;
+	  	margin-right: 1rem;
+	  }
+
+	  h1 {
+	  	font-size: 1.5rem;
+	  }
 	}
 	nav{
 		justify-self: flex-end;
