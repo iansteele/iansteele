@@ -28,25 +28,21 @@ a:hover { color: white; }
 --------------------------- */
 /* -------------------------- Scaffolding
 --------------------------- */
-.page { display: grid; grid-template-rows: auto; grid-template-areas: "header" "main" "footer"; }
+.page { display: grid; grid-template-rows: auto 1fr auto; grid-template-columns: 1fr; height: 100vh; grid-template-areas: "header" "main" "footer"; }
 
 header { grid-area: header; }
 
-main { grid-area: main; display: grid; grid-template-rows: minmax(calc(100vh - 312px), auto) auto; grid-template-columns: auto; grid-template-areas: "hero" "work"; }
+main { grid-area: main; display: grid; grid-template-rows: auto; grid-template-columns: auto; grid-template-areas: "hero" "work"; }
 
-footer { grid-area: footer; }
+footer { grid-area: footer; grid-column-end: 3; }
 
 .hero { grid-area: hero; grid-row: 1 / 2; }
 
 .work { grid-area: work; grid-row: 2 / 3; display: grid; grid-template-columns: 1fr; grid-row-template: min-content; }
 
-@media (min-width: 768px) { main { grid-template-rows: minmax(calc(100vh - 212px), auto) auto; }
-  .work { grid-template-columns: 1fr 1fr; grid-template-columns: repeat(2, 1fr); grid-gap: 1rem; padding: 1rem; } }
-@media (min-width: 960px) { .work { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1200px) { main { grid-template-rows: minmax(calc(100vh - 228px), auto) auto; } }
 /* -------------------------- Base Styles
 --------------------------- */
-.hero { display: flex; flex-direction: column; height: 100%; padding: 1rem; position: relative; }
+.hero { display: flex; flex-direction: column; height: 100%; padding: 3rem 1rem; position: relative; }
 .hero > img { position: absolute; right: 0; bottom: 0; height: 40%; width: auto; display: block; z-index: 1; }
 .hero .headline, .hero .bio-description, .hero .social-link { z-index: 2; }
 
@@ -89,7 +85,7 @@ footer { grid-area: footer; }
   .bio { max-width: 50%; margin-bottom: 3rem; }
   .bio-description { font-size: 1.5rem; }
   .work { padding: 3rem; } }
-header { text-align: center; font-family: "Brandon-Grotesque", san-serif; text-transform: uppercase; display: flex; flex-direction: column; padding: 2rem 0 1rem 0; z-index: 10; }
+header { text-align: center; font-family: "Brandon-Grotesque", san-serif; text-transform: uppercase; display: flex; flex-direction: column; padding: 2rem 0 0rem 0; z-index: 10; }
 
 .logo { color: #FFF; font-size: 1rem; font-weight: 900; text-align: center; padding-top: 1rem; }
 .logo h1, .logo svg { vertical-align: middle; }

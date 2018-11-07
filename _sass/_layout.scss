@@ -3,7 +3,9 @@
 --------------------------- */
 .page{
 	display: grid;
-	grid-template-rows: auto;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 1fr;
+	height: 100vh;
 	grid-template-areas: 
 		"header"
 		"main"
@@ -18,7 +20,7 @@ header {
 main {
 	grid-area: main;
 	display: grid;
-	grid-template-rows: minmax(calc(100vh - 312px), auto) auto;
+	grid-template-rows: auto;
 	grid-template-columns: auto;
 	grid-template-areas: 
 		"hero"
@@ -27,6 +29,7 @@ main {
 
 footer {
 	grid-area: footer;
+	grid-column-end: 3;
 }
 
 .hero{
@@ -39,31 +42,4 @@ footer {
 	display: grid;
   grid-template-columns: 1fr;
   grid-row-template: min-content;
-}
-
-@media (min-width: 768px){
-
-	main {
-		grid-template-rows: minmax(calc(100vh - 212px), auto) auto;
-	}
-
-	.work{
-		grid-template-columns: 1fr 1fr;
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 1rem;
-		padding:1rem;
-	}
-}
-
-@media (min-width: 960px){
-
-	.work{
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-@media (min-width: 1200px) {
-	main {
-		grid-template-rows: minmax(calc(100vh - 228px), auto) auto;
-	}
 }
