@@ -21,11 +21,22 @@ header {
   }
 
   h1 {
-  	font-size: 1.25rem;
-  	color: $brand-secondary;
+  	font-size: 1.5rem;
+  	color: $white;
   	letter-spacing: .125rem;
   	margin: 0;
 	line-height: 3;
+  }
+
+  h1 span{
+  	border-bottom: 4px solid $brand-secondary;
+  	color: $brand-secondary;
+  	display: inline-block;
+  	font-size: 14px;
+  	line-height: 22px;
+  	text-align: center;
+  	vertical-align: super;
+  	width: auto;
   }
 
   svg{
@@ -58,7 +69,7 @@ header {
 	  }
 
 	  h1 {
-	  	font-size: 1.5rem;
+	  	font-size: 1.75rem;
 	  }
 	}
 	nav{
