@@ -90,7 +90,7 @@ header { text-align: center; font-family: "Brandon-Grotesque", san-serif; text-t
 .logo { color: #FFF; font-size: 1rem; font-weight: 900; text-align: center; padding-top: 1rem; }
 .logo h1, .logo svg { vertical-align: middle; }
 .logo h1 { font-size: 1.5rem; color: #FFF; letter-spacing: .125rem; margin: 0; line-height: 3; }
-.logo h1 span { border-bottom: 4px solid #C3C1A0; color: #C3C1A0; display: inline-block; font-size: 14px; line-height: 22px; text-align: center; vertical-align: super; width: auto; }
+.logo h1 span { border-bottom: 4px solid #C3C1A0; color: #C3C1A0; display: inline-block; font-size: 14px; line-height: 20px; margin-top: -10px; text-align: center; vertical-align: middle; width: auto; }
 .logo svg { border-radius: 50%; fill: #FFF; width: 80px; height: 80px; }
 
 @media (min-width: 768px) { header { flex-direction: row; padding: 1rem 2rem; justify-content: center; }
