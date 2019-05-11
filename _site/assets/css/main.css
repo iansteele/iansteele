@@ -65,7 +65,7 @@ footer { grid-area: footer; grid-column-end: 3; }
 .social_link:hover svg { fill: #C3C1A0; }
 
 .footer { border-top: 8px solid #221B24; background: #C3C1A0; padding: 1rem; display: block; text-align: center; }
-.footer .cta-text { color: #666; }
+.footer .cta-text { color: #221B24; }
 
 .cta { text-transform: uppercase; font-weight: bold; }
 .cta .cta-text { margin-bottom: .5rem; font-size: .75rem; }
