@@ -7,9 +7,9 @@
 	grid-template-columns: 1fr;
 	height: 100vh;
 	grid-template-areas: 
+		"footer"
 		"header"
-		"main"
-		"footer";
+		"main";
 }
 
 // Header
