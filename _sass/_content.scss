@@ -5,7 +5,7 @@
 .hero {
 	display: flex;
 	flex-direction: column;
-  	padding: 3rem 1rem;
+	padding: 3rem 1rem;
 	position: relative;
 
 	> img {
@@ -82,10 +82,69 @@
 	}
 }
 
+//--------------------------
+// Projects
+//--------------------------
 
-//--------------------------
-// Footer
-//--------------------------
+.projects {
+	padding: 1rem;
+}
+
+.project {
+	border-radius: .5em;
+	display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75vw auto;
+  grid-template-areas: "project-left" "project-right";
+	margin-bottom: 1rem;
+	overflow: hidden;
+}
+
+.project-description {
+	background: $white;
+	color: $black;
+	grid-area: "project-right";
+	padding: 1rem;
+
+	h2 {
+		font-size: 1.25rem;
+		line-height: 1.5;
+	}
+
+	h3 {
+		color: #afafaf;
+		font-size: 1rem;
+		margin-bottom: .5em;
+	}
+
+	p {
+		border-top: 6px solid #eee;
+		padding-top: .75em;
+		margin-bottom: 1rem;
+	}
+
+	.project--btn {
+		text-decoration: underline;
+		color: $brand-secondary;
+	}
+}
+
+.project--thumbnail {
+	background: white;
+	color: $black;
+	grid-area: "project-left";
+	width: 100%;
+	padding-top: 100%;
+}
+
+.project__manual-grading {
+	.project--thumbnail {
+		background-image: url(../img/manualgrading-bg.jpg);
+		background-size: 160%;
+    background-repeat: no-repeat;
+    background-position: 10% bottom;
+	}
+}
 
 .footer {
 	border-top: 8px solid $brand-primary;
@@ -135,8 +194,7 @@
     to   { opacity: 1; }
 }
 
-@media (min-width: 768px){
-
+@media screen and (min-width: 34em){
 	.hero {
 		justify-content: center;
 		align-items: center;
@@ -169,7 +227,16 @@
 			width: 48px;
 		}
 	}
-
+	.project-description {
+		h2 {
+			font-size: 2.5rem;
+		}
+		h3 {
+			color: $brand-secondary;
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 @media (min-width: 1200px){
