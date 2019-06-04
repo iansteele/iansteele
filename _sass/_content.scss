@@ -5,8 +5,9 @@
 .hero {
 	display: flex;
 	flex-direction: column;
-	padding: 3rem 1rem;
 	position: relative;
+	text-align: center;
+	margin-bottom: 1rem;
 
 	> img {
 		position: absolute;
@@ -17,6 +18,21 @@
 		display: block;
 		z-index: 1;
 	}
+	.caret {
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-top: 8px solid $brand-secondary;
+		display: inline-block;
+		height: 0;
+		margin: 0 auto;
+		width: 0;
+	}
+	p {
+		color: rgba(255,255,255,.25);
+		font-size: .75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
 
 	.headline,
 	.bio-description,
@@ -25,27 +41,18 @@
 	}
 }
 
-.bio {
-	text-align: center;
-	margin-bottom: 2rem;
-}
-
 .headline {
-	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 2;
+	font-size: 2rem;
 	font-weight: 900;
 	line-height: 1.5;
 	font-family: $font-display;
 	color: $white;
 	margin-bottom: 1.5rem;
-	-webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 5s; /* Firefox < 16 */
-      -ms-animation: fadein 5s; /* Internet Explorer */
-       -o-animation: fadein 5s; /* Opera < 12.1 */
-          animation: fadein 5s;
-
-	span{
-		color: $white;
-	}
+	padding: 2rem;
 }
 
 .social {
@@ -79,70 +86,6 @@
 .social_link:hover {
 	svg {
 	 	fill: $brand-secondary;
-	}
-}
-
-//--------------------------
-// Projects
-//--------------------------
-
-.projects {
-	padding: 1rem;
-}
-
-.project {
-	border-radius: .5em;
-	display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 75vw auto;
-  grid-template-areas: "project-left" "project-right";
-	margin-bottom: 1rem;
-	overflow: hidden;
-}
-
-.project-description {
-	background: $white;
-	color: $black;
-	grid-area: "project-right";
-	padding: 1rem;
-
-	h2 {
-		font-size: 1.25rem;
-		line-height: 1.5;
-	}
-
-	h3 {
-		color: #afafaf;
-		font-size: 1rem;
-		margin-bottom: .5em;
-	}
-
-	p {
-		border-top: 6px solid #eee;
-		padding-top: .75em;
-		margin-bottom: 1rem;
-	}
-
-	.project--btn {
-		text-decoration: underline;
-		color: $brand-secondary;
-	}
-}
-
-.project--thumbnail {
-	background: white;
-	color: $black;
-	grid-area: "project-left";
-	width: 100%;
-	padding-top: 100%;
-}
-
-.project__manual-grading {
-	.project--thumbnail {
-		background-image: url(../img/manualgrading-bg.jpg);
-		background-size: 160%;
-    background-repeat: no-repeat;
-    background-position: 10% bottom;
 	}
 }
 
@@ -198,6 +141,7 @@
 	.hero {
 		justify-content: center;
 		align-items: center;
+		min-height: 34em;
 		> img {
 			height: 110%;
 		}
@@ -227,22 +171,11 @@
 			width: 48px;
 		}
 	}
-	.project-description {
-		h2 {
-			font-size: 2.5rem;
-		}
-		h3 {
-			color: $brand-secondary;
-			font-size: 1.5rem;
-			margin-bottom: 1rem;
-		}
-	}
 }
-
 @media (min-width: 1200px){
 
 	.headline {
-		font-size: 3rem;
+		max-width: 75%;
 	}
 
 	.bio {
@@ -252,9 +185,5 @@
 
 	.bio-description {
 		font-size: 1.5rem;
-	}
-
-	.work {
-		padding: 3rem;
 	}
 }

@@ -1,0 +1,103 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
+//--------------------------
+// Projects
+//--------------------------
+
+.projects {
+	padding: 1rem;
+}
+
+.project {
+	border-radius: .5em;
+	display: inline-block;
+	flex-basis: 100%;
+	position: relative;
+	overflow: hidden;
+
+	&:hover {
+		.project-description {
+			opacity: 1;
+			transition: opacity .5s ease;
+		}
+		img {
+			opacity: .8;
+			transform: scale(1.02);
+		}
+	}
+}
+
+.project--thumbnail{
+	transition: transform .5s ease;
+}
+
+.project-description {
+	background: rgba( $black, .7 );
+	opacity: 0;
+	color: white;
+	padding: 1rem;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	pointer-events: none;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	top: 0;
+
+	h2 {
+		font-size: 2rem;
+		line-height: 1.5;
+	}
+
+	h3 {
+		color: $brand-secondary;
+		font-size: 1rem;
+		margin-bottom: .5em;
+	}
+
+	p {
+		border-top: 6px solid #eee;
+		padding-top: .75em;
+		margin-bottom: 1rem;
+	}
+
+	.project--btn {
+		text-decoration: underline;
+		color: $brand-secondary;
+	}
+}
+
+.project--thumbnail {
+	box-shadow: rgba(0,0,0,.15) 0 0 .5rem .25rem;
+	height: auto;
+	vertical-align: top;
+	width: 100%;
+}
+
+
+@media screen and (min-width: 34em){
+	.projects {
+		grid-template-columns: 1fr 1fr;
+	}
+	.project-description {
+		h2 {
+			font-size: 2.5rem;
+		}
+		h3 {
+			color: $brand-secondary;
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+@media (min-width: 1200px){
+	.projects {
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 1rem 4rem;
+		margin-bottom: 2rem;
+	}
+}
