@@ -27,6 +27,28 @@ $font-primary: 'Museo-Slab', serif;
   }
 }
 
+h3 {
+	font-size: 1.5em;
+	margin-bottom: .5em;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+
+.project_title {
+	font-size: 2em;
+}
+
+.project_subtitle {
+	font-size: 1.25em;
+  margin-bottom: 1rem;
+  padding-bottom: 1em;
+  color: #c3c1a0;
+  border-bottom: 2px solid #353535;
+}
+
 @media (min-width: 768px){
   .headline {
     font-size: 3rem;

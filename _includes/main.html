@@ -1,24 +1,3 @@
-<main aria-label="content">
-	<div class="hero">
-  	<h1 class="headline">
-  		Hey there, my name is Ian Steele and I am a product designer in southern Illinois.
-  	</h1>
-		<div>
-			<p>My work</p>
-			<span class="caret"/>
-		</div>
-	</div>
-	<div class="projects" id="work">
-		{% for post in site.categories.project %}
-			{% if post.url %}
-				<a href="{{ post.url }}" class="project project__manual-grading">
-					<img class="project--thumbnail" src="{{ post.thumbnail}}" alt="">
-					<div class="project-description">
-						<h2>"{{ post.title }}"</h2>
-						<h3>"{{ post.subtitle }}"</h3>
-					</div>
-				</a>
-			{% endif %}
-		{% endfor %}
-	</div>
+<main class="page-content" aria-label="content">
+	{{ content }}
 </main>

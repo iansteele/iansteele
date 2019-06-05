@@ -17,7 +17,7 @@
 	overflow: hidden;
 
 	&:hover {
-		.project-description {
+		.project_thumbnail-description {
 			opacity: 1;
 			transition: opacity .5s ease;
 		}
@@ -28,11 +28,20 @@
 	}
 }
 
-.project--thumbnail{
+.project_thumbnail,
+.project_thumbnail-description {
+	pointer-events: none;
+}
+
+.project_thumbnail{
+	box-shadow: rgba(0,0,0,.15) 0 0 .5rem .25rem;
+	height: auto;
+	vertical-align: top;
+	width: 100%;
 	transition: transform .5s ease;
 }
 
-.project-description {
+.project_thumbnail-description {
 	background: rgba( $black, .7 );
 	opacity: 0;
 	color: white;
@@ -40,7 +49,6 @@
 	flex-direction: column;
 	justify-content: center;
 	position: absolute;
-	pointer-events: none;
 	display: flex;
 	align-items: center;
 	height: 100%;
@@ -57,40 +65,53 @@
 		font-size: 1rem;
 		margin-bottom: .5em;
 	}
-
-	p {
-		border-top: 6px solid #eee;
-		padding-top: .75em;
-		margin-bottom: 1rem;
-	}
-
-	.project--btn {
-		text-decoration: underline;
-		color: $brand-secondary;
-	}
 }
 
-.project--thumbnail {
-	box-shadow: rgba(0,0,0,.15) 0 0 .5rem .25rem;
-	height: auto;
-	vertical-align: top;
-	width: 100%;
+.project-description {
+	margin-bottom: 2em;
+}
+
+.section-split {
+	flex-direction: column;
 }
 
 
 @media screen and (min-width: 34em){
+
 	.projects {
 		grid-template-columns: 1fr 1fr;
 	}
+
 	.project-description {
+
 		h2 {
 			font-size: 2.5rem;
 		}
+
 		h3 {
 			color: $brand-secondary;
 			font-size: 1.5rem;
 			margin-bottom: 1rem;
 		}
+	}
+
+	.section,
+	.section-split,
+	.seciton--thirds {
+		margin-bottom: 1rem;
+	}
+
+	.section-split {
+		flex-direction: row;
+	}
+
+	.section-split--left{
+			padding-right: 2em;
+	}
+
+	.section-title {
+		font-size: 2em;
+		margin-bottom: .5em;
 	}
 }
 
@@ -100,4 +121,14 @@
 		padding: 1rem 4rem;
 		margin-bottom: 2rem;
 	}
+
+	.section-split--left,
+	.section-split--right {
+		max-width: 50%;
+	}
+
+	.section-split--left {
+		padding-right: 4em;
+	}
+
 }

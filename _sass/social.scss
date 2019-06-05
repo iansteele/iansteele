@@ -1,0 +1,52 @@
+.social {
+	text-align: center;
+}
+
+.social_link {
+	border-radius: 50%;
+	display: inline-block;
+
+	a {
+		display: block;
+		height: 44px;
+		text-align: center;
+		padding: .5rem;
+		width: 44px;
+	}
+
+	svg {
+	 	fill: $white;
+		height: 100%;
+		width: 100%;
+	}
+
+	&:last-of-type{
+		margin-right: 0;
+	}
+
+}
+
+.footer {
+	.social_link svg {
+		fill: $black;
+	}
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (min-width: 34em){
+  .social_link {
+
+  	a {
+  		height: 48px;
+  		width: 48px;
+  	}
+  }
+
+}
+@media (min-width: 1200px){
+
+}

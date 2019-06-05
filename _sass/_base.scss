@@ -16,7 +16,7 @@ body {
   font-size: 16px;
 	margin: 0;
   font-family: $font-display;
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 ul,
@@ -28,9 +28,12 @@ li {
 
 main {
 	width: 100%;
-	margin: auto;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
 //--------------------------
 // Buttons
 //--------------------------

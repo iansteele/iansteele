@@ -55,32 +55,14 @@
 	padding: 2rem;
 }
 
-.social {
-	text-align: center;
+
+.page-content {
+	padding: 1rem;
 }
 
-.social_link {
-	border-radius: 50%;
-	display: inline-block;
-
-	a {
-		display: block;
-		height: 44px;
-		text-align: center;
-		padding: .5rem;
-		width: 44px;
-	}
-
-	svg {
-	 	fill: $white;
-		height: 100%;
-		width: 100%;
-	}
-
-	&:last-of-type{
-		margin-right: 0;
-	}
-
+.section-split {
+	display: flex;
+	flex-direction: column;
 }
 
 .social_link:hover {
@@ -160,17 +142,10 @@
 		padding: 0 1rem;
 	}
 
-	.intro {
-		font-size: 4rem;
+	.section-split {
+		flex-direction: row;
 	}
 
-	.social_link {
-
-		a {
-			height: 48px;
-			width: 48px;
-		}
-	}
 }
 @media (min-width: 1200px){
 
