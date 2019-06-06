@@ -1,29 +1,3 @@
-<<<<<<< HEAD
 <main class="page-content" aria-label="content">
-	{{ content }}
-=======
-<main aria-label="content">
-	<div class="hero">
-  	<h1 class="headline">
-  		Hey there, my name is Ian Steele and I am a product designer in southern Illinois.
-  	</h1>
-		<div>
-			<p>My work</p>
-			<span class="caret"/>
-		</div>
-	</div>
-	<div class="projects" id="work">
-  {% for project in site.projects %}
-  {% if project.url %}
-    <a href="{{ project.url }}" class="project project__manual-grading">
-      <img class="project--thumbnail" src="{{ project.thumbnail}}" alt="">
-      <div class="project-description">
-        <h2>"{{ project.title }}"</h2>
-        <h3>"{{ project.subtitle }}"</h3>
-      </div>
-    </a>
-  {% endif %}
-  {% endfor %}
-	</div>
->>>>>>> e3fba3183188143109f44a9f962c95eb2f6c2420
+  {{ content }}
 </main>
