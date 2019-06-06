@@ -9,16 +9,16 @@
 		</div>
 	</div>
 	<div class="projects" id="work">
-		{% for post in site.categories.project %}
-			{% if post.url %}
-				<a href="{{ post.url }}" class="project project__manual-grading">
-					<img class="project--thumbnail" src="{{ post.thumbnail}}" alt="">
-					<div class="project-description">
-						<h2>"{{ post.title }}"</h2>
-						<h3>"{{ post.subtitle }}"</h3>
-					</div>
-				</a>
-			{% endif %}
-		{% endfor %}
+  {% for project in site.projects %}
+  {% if project.url %}
+    <a href="{{ project.url }}" class="project project__manual-grading">
+      <img class="project--thumbnail" src="{{ project.thumbnail}}" alt="">
+      <div class="project-description">
+        <h2>"{{ project.title }}"</h2>
+        <h3>"{{ project.subtitle }}"</h3>
+      </div>
+    </a>
+  {% endif %}
+  {% endfor %}
 	</div>
 </main>
