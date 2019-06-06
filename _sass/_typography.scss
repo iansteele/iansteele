@@ -28,6 +28,7 @@ $font-primary: 'Museo-Slab', serif;
 }
 
 h3 {
+	color: $brand-secondary;
 	font-size: 1.5em;
 	margin-bottom: .5em;
 }
@@ -43,10 +44,10 @@ p {
 
 .project_subtitle {
 	font-size: 1.25em;
-  margin-bottom: 1rem;
-  padding-bottom: 1em;
-  color: #c3c1a0;
-  border-bottom: 2px solid #353535;
+}
+
+.center {
+	text-align: center;
 }
 
 @media (min-width: 768px){
@@ -54,5 +55,16 @@ p {
     font-size: 3rem;
     letter-spacing: .25rem;
     line-height: 5.5rem;
+  }
+
+	.text-lockup {
+		padding-top: 1.5em;
+	}
+}
+
+@media (min-width: 1200px){
+  p,
+	li {
+    font-size: 1.25rem;
   }
 }

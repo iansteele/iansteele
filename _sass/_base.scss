@@ -16,14 +16,27 @@ body {
   font-size: 16px;
 	margin: 0;
   font-family: $font-display;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+section ul {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+
+  li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+
+    &::before {
+      content: "\2022";
+      color: $brand-secondary;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+
 }
 
 main {

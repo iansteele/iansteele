@@ -68,13 +68,46 @@
 }
 
 .project-description {
+	border-bottom: 2px solid #353535;
+	padding-bottom: 1em;
 	margin-bottom: 2em;
+}
+
+.project_responsibilities {
+	color: rgba(255,255,255,.25);
+	font-weight:700;
+
+	li {
+		background: rgba(255,255,255,.05);
+		border-radius: 1em;
+		color: $white;
+		display: inline-block;
+		font-size: .825em;
+		margin-left: .25em;
+		padding: .25rem 1rem;
+	}
 }
 
 .section-split {
 	flex-direction: column;
 }
 
+.section-split--left,
+.section-split--right,
+.seciton--thirds {
+	margin-bottom: 2rem;
+}
+
+.section-full {
+	margin-bottom: 2em;
+}
+
+.label {
+	color: #AAA;
+	font-size: .75rem;
+	margin-bottom: .25rem;
+	text-transform: uppercase;
+}
 
 @media screen and (min-width: 34em){
 
@@ -95,12 +128,6 @@
 		}
 	}
 
-	.section,
-	.section-split,
-	.seciton--thirds {
-		margin-bottom: 1rem;
-	}
-
 	.section-split {
 		flex-direction: row;
 	}
@@ -109,9 +136,16 @@
 			padding-right: 2em;
 	}
 
-	.section-title {
-		font-size: 2em;
-		margin-bottom: .5em;
+	.text-lockup {
+		h3 {
+			font-size: 1.5em;
+			margin-bottom: .5em;
+			text-transform: uppercase;
+		}
+	}
+
+	.hero-image {
+		margin-bottom: 4em;
 	}
 }
 
