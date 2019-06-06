@@ -50,6 +50,13 @@ p {
 	text-align: center;
 }
 
+.label {
+	color: #AAA;
+	font-size: .75rem;
+	margin-bottom: .25rem;
+	text-transform: uppercase;
+}
+
 @media (min-width: 768px){
   .headline {
     font-size: 3rem;

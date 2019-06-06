@@ -102,11 +102,11 @@
 	margin-bottom: 2em;
 }
 
-.label {
-	color: #AAA;
-	font-size: .75rem;
-	margin-bottom: .25rem;
-	text-transform: uppercase;
+.introduction {
+	color: $brand-secondary;
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
 }
 
 @media screen and (min-width: 34em){
