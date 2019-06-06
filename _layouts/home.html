@@ -4,12 +4,12 @@
   <body>
     <div class="page">
       {% include header.html %}
-      <main aria-label="content">
+      <main class="page-content" aria-label="content">
       	<div class="hero">
         	<h1 class="headline">
         		Hey there, my name is Ian Steele and I am a product designer in southern Illinois.
         	</h1>
-      		<div>
+      		<div class="caret">
       			<p>My work</p>
       			<span class="caret"/>
       		</div>
@@ -19,9 +19,9 @@
         {% if project.url %}
           <a href="{{ project.url }}" class="project project__manual-grading">
             <img class="project--thumbnail" src="{{ project.thumbnail}}" alt="">
-            <div class="project-description">
-              <h2>"{{ project.title }}"</h2>
-              <h3>"{{ project.subtitle }}"</h3>
+            <div class="project_thumbnail-description">
+              <h2>{{ project.title }}</h2>
+              <h3>{{ project.subtitle }}</h3>
             </div>
           </a>
         {% endif %}

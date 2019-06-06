@@ -27,6 +27,16 @@ $font-primary: 'Museo-Slab', serif;
   }
 }
 
+.callout {
+	color: $brand-secondary;
+	font-size: 1.5rem;
+	font-weight: 900;
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
 h3 {
 	color: $brand-secondary;
 	font-size: 1.5em;
