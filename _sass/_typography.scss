@@ -15,16 +15,11 @@ $font-primary: 'Museo-Slab', serif;
 }
 
 .headline {
-	color: black;
-	font-size: 2.25rem;
-  font-family: $font-primary;
-  font-weight: 900;
-  letter-spacing: .25rem;
-  line-height: 4rem;
-
-  h1 {
-  	margin: 0;
-  }
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 1.25rem;
+	min-height: 240px;
 }
 
 .callout {
@@ -33,7 +28,7 @@ $font-primary: 'Museo-Slab', serif;
 	font-weight: 900;
 	max-width: 75%;
 	margin: 0 auto;
-	padding: 2em;
+	padding: 1.5em 2em 2em;
 	text-align: center;
 }
 
@@ -67,6 +62,13 @@ p {
 	text-transform: uppercase;
 }
 
+.text--credit {
+	color: $brand-secondary;
+	display: block;
+	font-size: .75em;
+	margin-top: .5em;
+	text-align: right;
+}
 @media (min-width: 768px){
   .headline {
     font-size: 3rem;
@@ -80,7 +82,7 @@ p {
 }
 
 @media (min-width: 1200px){
-  p,
+	  p,
 	li {
     font-size: 1.25rem;
   }
