@@ -2,6 +2,12 @@ $font-display: 'Brandon-Grotesque', san-serif;
 /*$font-display: 'Merriweather', san-serif;*/
 $font-primary: 'Museo-Slab', serif;
 
+// rvr stands for responsive vertical rhythm
+@function rvr($multiple) {
+  @return calc(var(--baseline) * $multiple * 1rem);
+}
+
+
 .font-size-small {
 	font-size: .75rem;
 }
@@ -32,23 +38,15 @@ $font-primary: 'Museo-Slab', serif;
 	text-align: center;
 }
 
-h3 {
+.project_subtitle {
 	color: $brand-secondary;
-	font-size: 1.5em;
-	margin-bottom: .5em;
+	font-size: 1em;
+	margin-bottom: rvr(.5);
 }
 
 p {
 	font-size: 1em;
 	margin-bottom: 1em;
-}
-
-.project_title {
-	font-size: 2em;
-}
-
-.project_subtitle {
-	font-size: 1.25em;
 }
 
 .center {
@@ -58,7 +56,7 @@ p {
 .label {
 	color: #AAA;
 	font-size: .75rem;
-	margin-bottom: .25rem;
+	margin-bottom: rvr(.25);;
 	text-transform: uppercase;
 }
 
