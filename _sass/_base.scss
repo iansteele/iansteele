@@ -1,6 +1,14 @@
 /* --------------------------
   Base Styles
 --------------------------- */
+:root {
+  --baseline: 1.6rem;
+}
+
+// rvr stands for responsive vertical rhythm
+@function rvr($multiple) {
+  @return calc(var(--baseline) * $multiple * 1rem);
+}
 
 * {
   box-sizing: border-box;
@@ -14,12 +22,12 @@ body {
 	background-color: $brand-primary;
   color: $white;
   font-size: 16px;
-	margin: 0;
+	margin: rvr(8);
   font-family: $font-display;
-  line-height: 1.6;
+  line-height: var(--baseline);
 }
 
-section ul {
+.list--inline {
   padding-left: 1.825em;
   padding-right: 1.25em;
 
@@ -47,6 +55,7 @@ img {
   width: 100%;
   height: auto;
   vertical-align: middle;
+  margin-bottom: .5rem;
 }
 //--------------------------
 // Buttons

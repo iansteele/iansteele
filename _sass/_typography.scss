@@ -2,11 +2,6 @@ $font-display: 'Brandon-Grotesque', san-serif;
 /*$font-display: 'Merriweather', san-serif;*/
 $font-primary: 'Museo-Slab', serif;
 
-// rvr stands for responsive vertical rhythm
-@function rvr($multiple) {
-  @return calc(var(--baseline) * $multiple * 1rem);
-}
-
 
 .font-size-small {
 	font-size: .75rem;
@@ -18,6 +13,11 @@ $font-primary: 'Museo-Slab', serif;
 
 .font-size-large {
 	font-size: 1.5rem;
+}
+
+h3 {
+	color: $brand-secondary;
+	margin-bottom: var(--baseline);
 }
 
 .headline {
@@ -41,7 +41,7 @@ $font-primary: 'Museo-Slab', serif;
 .project_subtitle {
 	color: $brand-secondary;
 	font-size: 1em;
-	margin-bottom: rvr(.5);
+	margin-bottom: .5rem;
 }
 
 p {
@@ -55,8 +55,9 @@ p {
 
 .label {
 	color: #AAA;
-	font-size: .75rem;
-	margin-bottom: rvr(.25);;
+	font-size: .625rem;
+	margin-bottom: rvr(5);
+	margin-top: -.25rem;
 	text-transform: uppercase;
 }
 
@@ -65,18 +66,18 @@ p {
 	display: block;
 	font-size: .75em;
 	margin-top: .5em;
-	text-align: right;
 }
+
+.text-lockup {
+	padding: 1.6rem 0;
+}
+
 @media (min-width: 768px){
   .headline {
     font-size: 3rem;
     letter-spacing: .25rem;
     line-height: 5.5rem;
   }
-
-	.text-lockup {
-		padding-top: 1.5em;
-	}
 }
 
 @media (min-width: 1200px){

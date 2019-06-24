@@ -5,6 +5,15 @@
 // Projects
 //--------------------------
 
+.case-study-wrapper{
+	h3:before {
+		content: "";
+		background: $brand-secondary;
+		height: 48px;
+		width: 400px;
+	}
+}
+
 .project {
 	border-radius: .5em;
 	display: inline-block;
@@ -64,7 +73,7 @@
 }
 
 .project-description {
-	border-bottom: 2px solid #353535;
+	border-bottom: 1px solid #353535;
 	padding-bottom: .5em;
 	margin-bottom: 1rem;
 }
@@ -112,6 +121,8 @@
 
 .image-group {
 	display: flex;
+	margin-bottom: rvr(2);
+	flex-direction: column;
 }
 
 .introduction {
@@ -156,7 +167,6 @@
 	.text-lockup {
 		h3 {
 			font-size: 1.5em;
-			margin-bottom: .5em;
 			text-transform: uppercase;
 		}
 	}
@@ -166,8 +176,24 @@
 	}
 
 	.list--inline {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
 		li {
 			display: inline-block;
+			max-width: 48%;
+			padding-right: 2rem;
+			margin-bottom: 1.6rem;
+		}
+	}
+
+	.image-group {
+		flex-direction: row;
+		flex-wrap: wrap;
+		img {
+			width: 450px;
+			max-width: 100%;
 		}
 	}
 }
