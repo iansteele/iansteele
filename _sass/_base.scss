@@ -2,7 +2,7 @@
   Base Styles
 --------------------------- */
 :root {
-  --baseline: 1.6rem;
+  --baseline: 1.6;
 }
 
 // rvr stands for responsive vertical rhythm
@@ -51,11 +51,13 @@ main {
 	width: 100%;
 }
 
-img {
+img,
+video {
   width: 100%;
   height: auto;
   vertical-align: middle;
 }
+
 //--------------------------
 // Buttons
 //--------------------------

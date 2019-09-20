@@ -22,15 +22,19 @@
 	position: relative;
 	overflow: hidden;
 
+	.project_thumbnail-description ,
+	img {
+		transition: transform .5s ease;
+	}
+
 	&:hover {
 		box-shadow: rgba(0,0,0,.4) 0 0 2em 0;
 
 		.project_thumbnail-description {
 			opacity: 1;
-			transition: opacity .5s ease;
+			transition: opacity .25s ease-in;
 		}
 		img {
-			opacity: .8;
 			transform: scale(1.02);
 		}
 	}
@@ -65,13 +69,13 @@
 
 	h2 {
 		font-size: 2rem;
-		line-height: 1.5;
+		line-height: 1;
 	}
 
 	h3 {
 		color: $brand-secondary;
-		font-size: 1rem;
-		margin-bottom: .5em;
+		font-size: 1.5rem;
+		margin-bottom: 0;
 	}
 }
 
@@ -145,19 +149,6 @@
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.project_thumbnail-description {
-
-		h2 {
-			font-size: 2.5rem;
-		}
-
-		h3 {
-			color: $brand-secondary;
-			font-size: 1.5rem;
-			margin-bottom: 1rem;
-		}
-	}
-
 	.section-split {
 		flex-direction: row;
 	}
@@ -204,7 +195,6 @@
 @media (min-width: 1200px){
 	.projects {
 		grid-template-columns: 1fr 1fr 1fr;
-		padding: 1rem 4rem;
 		margin-bottom: 2rem;
 	}
 

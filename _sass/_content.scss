@@ -61,7 +61,7 @@
 
 
 .page-content {
-	padding: 1rem;
+	padding: 1rem 1rem 0;
 }
 
 .section-split {
@@ -76,7 +76,6 @@
 }
 
 .footer {
-	border-top: 8px solid $brand-primary;
 	background: white;
 	padding: .5rem;
 	display: block;
