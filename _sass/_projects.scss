@@ -5,7 +5,11 @@
 // Projects
 //--------------------------
 
-.case-study-wrapper{
+.case-study-wrapper {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 3rem;
+
 	h3:before {
 		content: "";
 		background: $brand-secondary;
@@ -127,6 +131,9 @@
 	img{
 		box-shadow: rgba(0,0,0,.5) 0 0 1em;
 		margin-bottom: 1rem;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
