@@ -35,43 +35,10 @@ main {
 
 .about {
   background: white;
-}
-
-.two-col{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
-
-  .left-col{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .right-col {
-    color: $brand-primary;
-    flex-grow: 1;
-    padding: 3rem 2rem;
-    font-weight: 500;
-  }
-}
-
-.about .left-col {
-  background: url(/assets/img/selfie.jpg);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: bottom center;
-  border-bottom: 8px solid $brand-secondary;
-  padding-bottom: 7rem;
-  padding-top: 3rem;
-
-  h2 {
-    font-size: 4rem;
-    color: $brand-secondary;
-    line-height: .875em;
-    text-transform: uppercase;
-    mix-blend-mode: multiply;
-  }
+  border-top: 1rem solid $brand-secondary;
+  color: $brand-primary;
+  text-align: center;
+  padding: 2rem 10%;
 }
 
 .text--base-color {
@@ -105,7 +72,6 @@ footer {
   .two-col{
     display: flex;
     flex-direction: row;
-    margin-bottom: 3rem;
 
     .left-col{
       display: flex;
@@ -146,20 +112,13 @@ footer {
     grid-gap: 2em;
   }
 
-  .about .left-col {
-    background: url(/assets/img/selfie.jpg);
-    background-repeat: no-repeat;
-    background-size: 120%;
-    background-position: bottom right;
-    padding-left: 2rem;
-    padding-top: 4.5rem;
+  .about {
+    padding-top: 4em;
+  }
 
-    h2 {
-      font-size: 8rem;
-      color: $brand-secondary;
-      line-height: .875em;
-      text-transform: uppercase;
-      mix-blend-mode: multiply;
-    }
+  .about *{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
   }
 }
