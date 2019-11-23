@@ -25,7 +25,6 @@ header {
 
 main {
 	grid-area: main;
-  padding: 1rem 1rem 0 1rem;
   margin:0 auto;
   overflow: hidden;
 }
@@ -92,13 +91,12 @@ footer {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
-
-  main {
-    padding: 1rem 2rem 0 2rem;
-  }
 
   .about {
     background: white;
@@ -143,7 +141,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  
+
   .projects {
     grid-gap: 2em;
   }

@@ -29,6 +29,7 @@ sass:
   sass_dir: _sass
 plugins:
   # - jekyll-feed
+host: 0.0.0.0
 
 relative_permalinks: false
 include: ['_pages']
