@@ -65,6 +65,7 @@ video {
 
 a {
   color: $brand-secondary;
+  cursor: pointer;
   font-weight: bold;
   display: inline-block;
   &:hover {
