@@ -14,7 +14,7 @@ header {
 
 .logo {
 	color: $white;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 900;
 	padding: .5rem;
 	text-align: center;
@@ -59,7 +59,7 @@ nav {
 	a {
 		color: $brand-secondary;
 		flex-basis: 100px;
-		font-size: .875em;
+		font-size: 1rem;
 		padding: .5rem;
 		transition: color .5s ease;
 
@@ -70,8 +70,9 @@ nav {
 	}
 }
 
-@media (min-width: 768px){
-	header{
+@media (min-width: 768px) {
+	header {
+		flex-direction: row;
 		padding: 1.5rem 2rem;
 	}
 
@@ -79,19 +80,17 @@ nav {
 		font-size: 1.25rem;
 	  margin-bottom: 0;
 	}
-	nav{
+	nav {
 		justify-self: flex-end;
 		margin-bottom: 0;
-		a{
+
+		a {
 			padding: .5rem 1rem;
 		}
 	}
 }
 
 @media (min-width: 1200px){
-	header{
-		flex-direction: row;
-	}
 
 	.logo {
 	  margin-bottom: 0;

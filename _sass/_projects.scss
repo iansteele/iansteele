@@ -14,6 +14,10 @@
 	}
 }
 
+.projects {
+	margin-bottom: 3rem;
+}
+
 .project {
 	border-radius: .25em;
 	box-shadow: rgba(0,0,0,.4) 0 0 1em 0;
@@ -81,8 +85,8 @@
 
 .project-description {
 	border-bottom: 1px solid #353535;
-	padding-bottom: .5em;
-	margin-bottom: 1rem;
+	padding-bottom: 1em;
+	margin-bottom: 2rem;
 }
 
 .tags {
@@ -143,7 +147,7 @@
 	color: $brand-secondary;
 }
 
-@media screen and (min-width: 34em){
+@media (min-width: 768px) {
 
 	.projects {
 		grid-template-columns: 1fr 1fr;
@@ -192,10 +196,10 @@
 	}
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 	.projects {
 		grid-template-columns: 1fr 1fr 1fr;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 	}
 
 	.section-split--left,

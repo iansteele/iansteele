@@ -29,18 +29,19 @@ h3 {
 }
 
 .callout {
-	color: $brand-secondary;
-	font-size: 1.5rem;
-	font-weight: 900;
-	max-width: 75%;
-	margin: 0 auto;
-	padding: 1.5em 2em 2em;
-	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.project_title {
+	font-size: 2rem;
 }
 
 .project_subtitle {
 	color: $brand-secondary;
 	font-size: 1em;
+	font-weight: normal;
 	margin-bottom: .5rem;
 }
 
@@ -70,7 +71,11 @@ p {
 }
 
 .text-lockup {
-	margin: 1.6rem 0;
+	margin: 2rem 0;
+}
+
+.link {
+	color: $brand-secondary;
 }
 
 @media (min-width: 768px){

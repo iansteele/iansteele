@@ -2,7 +2,7 @@
   Base Styles
 --------------------------- */
 :root {
-  --baseline: 1.6;
+  --baseline: 1.8;
 }
 
 // rvr stands for responsive vertical rhythm
@@ -17,6 +17,7 @@
   padding: 0;
   text-decoration: none;
 }
+
 
 body {
 	background-color: $brand-primary;
@@ -75,10 +76,3 @@ a {
 /* --------------------------
   Media Queries
 --------------------------- */
-
-@media (min-width: 769px) {
-}
-
-@media (min-width: 1200px) {
-
-}

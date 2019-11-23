@@ -25,16 +25,58 @@ header {
 
 main {
 	grid-area: main;
-  padding: 1rem 0;
+  padding: 1rem 1rem 0 1rem;
   margin:0 auto;
+  overflow: hidden;
 }
 
-.main-wrapper {
-  max-width: 1600px;
+// .case-study-wrapper{
+//   max-width: 940px;
+// }
+
+.about {
+  background: white;
 }
 
-.case-study-wrapper{
-  max-width: 940px;
+.two-col{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+  .left-col{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .right-col {
+    color: $brand-primary;
+    flex-grow: 1;
+    padding: 3rem 2rem;
+    font-weight: 500;
+  }
+}
+
+.about .left-col {
+  background: url(/assets/img/selfie.jpg);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: bottom center;
+  border-bottom: 8px solid $brand-secondary;
+  padding-bottom: 7rem;
+  padding-top: 3rem;
+
+  h2 {
+    font-size: 4rem;
+    color: $brand-secondary;
+    line-height: .875em;
+    text-transform: uppercase;
+    mix-blend-mode: multiply;
+  }
+}
+
+.text--base-color {
+  font-size: 4rem;
 }
 
 footer {
@@ -50,4 +92,76 @@ footer {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+
+  main {
+    padding: 1rem 2rem 0 2rem;
+  }
+
+  .about {
+    background: white;
+  }
+
+  .two-col{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+
+    .left-col{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: 50%;
+      min-width: 40%;
+    }
+
+    .right-col {
+      color: $brand-primary;
+      flex-grow: 1;
+      padding: 4rem;
+    }
+  }
+
+  .about .left-col {
+    background: url(/assets/img/selfie.jpg);
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: bottom right;
+    padding-left: 2rem;
+    padding-top: 4.5rem;
+
+    h2 {
+      font-size: 4rem;
+      color: $brand-secondary;
+      line-height: .875em;
+      text-transform: uppercase;
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  
+  .projects {
+    grid-gap: 2em;
+  }
+
+  .about .left-col {
+    background: url(/assets/img/selfie.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: bottom right;
+    padding-left: 2rem;
+    padding-top: 4.5rem;
+
+    h2 {
+      font-size: 8rem;
+      color: $brand-secondary;
+      line-height: .875em;
+      text-transform: uppercase;
+      mix-blend-mode: multiply;
+    }
+  }
 }

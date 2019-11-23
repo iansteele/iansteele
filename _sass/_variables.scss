@@ -5,3 +5,10 @@ $brand-secondary: #AF7247;
 $light-gray: #C1C1BC;
 $medium-gray: #7F807C;
 $darker-gray: #41413D;
+
+.white {
+  background: $white;
+}
+
+$breakpoint-medium: "(min-width: 768px)";
+$breakpoint-large: "(min-width: 1200px)";
