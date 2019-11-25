@@ -62,13 +62,6 @@ a {
   cursor: pointer;
   font-weight: bold;
   display: inline-block;
-  &:hover {
-    color: white;
-  }
-}
-
-.about a:hover {
-  color: $brand-secondary;
 }
 
 /* --------------------------
