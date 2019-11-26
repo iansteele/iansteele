@@ -25,7 +25,6 @@
 
 .project {
 	border-radius: .25em;
-	box-shadow: rgba(0,0,0,.4) 0 0 1em 0;
 	display: inline-block;
 	flex-basis: 100%;
 	position: relative;
@@ -54,8 +53,7 @@
 	pointer-events: none;
 }
 
-.project_thumbnail{
-	box-shadow: rgba(0,0,0,.15) 0 0 .5rem .25rem;
+.project_thumbnail {
 	height: auto;
 	vertical-align: top;
 	width: 100%;
@@ -63,27 +61,25 @@
 }
 
 .project_thumbnail-description {
-	background: rgba( $black, .7 );
-	opacity: 0;
+	background: $brand-primary;
+	opacity: 1;
 	color: white;
-	padding: 1rem;
+	padding: .5rem;
 	flex-direction: column;
 	justify-content: center;
+	padding-right: 3rem;
 	position: absolute;
 	display: flex;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	top: 0;
+	bottom: 0;
 
 	h2 {
-		font-size: 2rem;
-		line-height: 1;
+		font-size: 1.25rem;
+		line-height: 1.5;
 	}
 
 	h3 {
 		color: $brand-secondary;
-		font-size: 1.5rem;
+		font-size: .75rem;
 		margin-bottom: 0;
 	}
 }
