@@ -17,9 +17,13 @@
 body {
 	background-color: $brand-primary;
   color: $white;
-  font-size: 16px;
   font-family: $font-display;
+  font-size: 16px;
   line-height: var(--baseline);
+}
+
+li {
+  list-style-type: none;
 }
 
 .list--inline {
@@ -27,16 +31,14 @@ body {
   padding-right: 1.25em;
 
   li {
-    list-style-type: none;
     margin-bottom: 1rem;
 
     &::before {
-      content: "\2022";
       color: $brand-secondary;
-      font-weight: bold;
+      content: "\2022";
       display: inline-block;
+      font-weight: bold;
       width: 1em;
-      margin-left: -1em;
     }
   }
 
@@ -48,9 +50,9 @@ main {
 
 img,
 video {
-  width: 100%;
   height: auto;
   vertical-align: middle;
+  width: 100%;
 }
 
 //--------------------------
@@ -60,10 +62,6 @@ video {
 a {
   color: $brand-secondary;
   cursor: pointer;
-  font-weight: bold;
   display: inline-block;
+  font-weight: bold;
 }
-
-/* --------------------------
-  Media Queries
---------------------------- */
