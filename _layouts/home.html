@@ -15,7 +15,8 @@
       		</div>
       	</div>
       	<div class="projects" id="work">
-        {% for project in site.projects %}
+        {% assign sorted_projects = site.projects | sort: 'order' %}
+        {% for project in sorted_projects %}
         {% if project.url %}
           <a href="{{ project.url }}" class="project project__manual-grading">
             <img class="project--thumbnail" src="{{ project.thumbnail}}" alt="">
