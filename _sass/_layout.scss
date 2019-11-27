@@ -29,26 +29,18 @@ main {
   overflow: hidden;
 }
 
-// .case-study-wrapper{
-//   max-width: 940px;
-// }
-
 .about {
-  background: white;
+  background: $white;
   border-top: 1rem solid $brand-secondary;
   color: $brand-primary;
-  text-align: center;
   padding: 2rem 10%;
+  text-align: center;
 
-  *{
+  * {
     margin-left: auto;
     margin-right: auto;
     max-width: 95%;
   }
-}
-
-.text--base-color {
-  font-size: 4rem;
 }
 
 footer {
@@ -56,11 +48,12 @@ footer {
 	grid-column-end: 3;
 }
 
-.hero{
+.hero {
 	grid-area: hero;
 	grid-row: 1 / 2;
 }
-.projects{
+
+.projects {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: 1fr;
@@ -73,42 +66,6 @@ footer {
 
   .about * {
     max-width: 75%;
-  }
-
-  .two-col{
-    display: flex;
-    flex-direction: row;
-
-    .left-col{
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      max-width: 50%;
-      min-width: 40%;
-    }
-
-    .right-col {
-      color: $brand-primary;
-      flex-grow: 1;
-      padding: 4rem;
-    }
-  }
-
-  .about .left-col {
-    background: url(/assets/img/selfie.jpg);
-    background-repeat: no-repeat;
-    background-size: 140%;
-    background-position: bottom right;
-    padding-left: 2rem;
-    padding-top: 4.5rem;
-
-    h2 {
-      font-size: 4rem;
-      color: $brand-secondary;
-      line-height: .875em;
-      text-transform: uppercase;
-      mix-blend-mode: multiply;
-    }
   }
 }
 
