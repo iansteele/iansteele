@@ -4,11 +4,11 @@ nav {
 }
 
 header {
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem 1rem 0;
 	text-align: center;
 	text-transform: uppercase;
-	flex-direction: column;
-	padding: 1rem 1rem 0;
-	justify-content: space-between;
 	z-index: 10;
 }
 
@@ -21,8 +21,8 @@ header {
 
 	h1,
 	svg {
-  	vertical-align: middle;
 		display: inline-block;
+  	vertical-align: middle;
   }
 
   h1 {
@@ -44,11 +44,11 @@ header {
   }
 
   svg {
+		margin-right: .375em;
   	border-radius: 50%;
   	fill: $white;
-		margin-right: .375em;
-  	width: 1.5em;
   	height: 1.5em;
+  	width: 1.5em;
   }
 }
 
@@ -65,12 +65,12 @@ nav {
 
 		&:hover {
 			color: $white;
-
 		}
 	}
 }
 
 @media (min-width: 768px) {
+	
 	header {
 		flex-direction: row;
 		padding: 1rem 2.5%;
@@ -80,6 +80,7 @@ nav {
 		font-size: 1.25rem;
 	  margin-bottom: 0;
 	}
+
 	nav {
 		justify-self: flex-end;
 		margin-bottom: 0;
