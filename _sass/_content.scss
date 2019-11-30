@@ -31,18 +31,6 @@
 	}
 }
 
-.headline {
-	color: $white;
-	display: flex;
-	flex-direction: column;
-	flex-grow: 2;
-	font-family: $font-display;
-	font-size: 1.5rem;
-	font-weight: 900;
-	justify-content: center;
-	line-height: 1.5;
-}
-
 .footer {
 	background: white;
 	display: block;
@@ -59,10 +47,5 @@
 		align-items: center;
 		justify-content: center;
 		min-height: 34em;
-	}
-
-	.headline {
-		font-size: 3rem;
-		max-width: 75%;
 	}
 }

@@ -79,6 +79,17 @@
 	}
 }
 
+.project_title {
+	font-size: 2rem;
+}
+
+.project_subtitle {
+	color: $brand-secondary;
+	font-size: 1em;
+	font-weight: normal;
+	margin-bottom: .5rem;
+}
+
 .project-description {
 	border-bottom: 1px solid #353535;
 	margin-bottom: 2rem;
