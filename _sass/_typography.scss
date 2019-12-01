@@ -1,21 +1,12 @@
 $font-display: 'Brandon-Grotesque', futura, sans-serif;
 $font-primary: 'Museo-Slab', serif;
 
-//--------------------------
-//    Variables
-//--------------------------
-
-$font-size-small: .75rem;
-
-$font-size-regular: 1rem;
-
-$font-size-large: 1.5rem;
-
 h3 {
 	color: $brand-secondary;
-	font-size: $font-size-large;
+	font-size: $font-size--m;
 	font-weight: 100;
 	margin-bottom: 1.25rem;
+	text-transform: uppercase;
 }
 
 p {
@@ -40,10 +31,6 @@ p {
 	display: block;
 	font-size: .75em;
 	margin-top: .5em;
-}
-
-.text-lockup {
-	margin: 2rem 0;
 }
 
 .link {

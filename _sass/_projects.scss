@@ -7,13 +7,6 @@
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-top: 2rem;
-
-	h3:before {
-		content: "";
-		background: $brand-secondary;
-		height: 48px;
-		width: 400px;
-	}
 }
 
 .projects {
@@ -81,13 +74,12 @@
 
 	h3 {
 		color: $brand-secondary;
-		font-size: $font-size-large;
 		margin-bottom: 0;
 	}
 }
 
 .project_title {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .project_subtitle {
@@ -119,6 +111,19 @@
 	}
 }
 
+.section {
+	margin: 2rem 0 4rem 0;
+
+	h3:before {
+		background: #353535;
+		content: "";
+		display: block;
+		height: 2px;
+		margin-bottom: $spacing--m;
+		width: 10%;
+	}
+}
+
 .section-images {
 	display: flex;
 	flex-direction: column;
@@ -144,9 +149,13 @@
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.text-lockup {
+	.project_title {
+		font-size: 2rem;
+	}
+
+	.section {
 		h3 {
-			font-size: 1.5em;
+			font-size: $font-size-l;
 			text-transform: uppercase;
 		}
 	}

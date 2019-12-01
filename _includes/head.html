@@ -9,4 +9,11 @@
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
+  <script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js">
+  </script>
+  <script>
+  window.onload = function() {
+      baseliner = new Baseliner();
+  }
+  </script>
 </head>
