@@ -1,3 +1,7 @@
+//--------------------------
+// Colors
+//--------------------------
+
 $black: #1a151b;
 $white: #FFF;
 $brand-primary: #1a151b;
@@ -6,9 +10,9 @@ $light-gray: #C1C1BC;
 $medium-gray: #7F807C;
 $darker-gray: #41413D;
 
-.white {
-  background: $white;
-}
+//--------------------------
+// Breakpoints
+//--------------------------
 
 $breakpoint-medium: "(min-width: 768px)";
 $breakpoint-large: "(min-width: 1200px)";

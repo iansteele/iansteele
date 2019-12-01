@@ -1,7 +1,3 @@
-.social {
-	text-align: center;
-}
-
 .social_link {
 	border-radius: 50%;
 	display: inline-block;
@@ -9,41 +5,29 @@
 	a {
 		display: block;
 		height: 44px;
-		text-align: center;
 		padding: .5rem;
+		text-align: center;
 		width: 44px;
 	}
 
 	svg {
-	 	fill: $white;
+	 	fill: $brand-primary;
 		height: 100%;
 		width: 100%;
 	}
 
-	&:last-of-type{
-		margin-right: 0;
-	}
-
 }
 
-.footer {
-	.social_link svg {
-		fill: $black;
-	}
-}
+//--------------------------
+// Media Queries
+//--------------------------
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+@media screen and (min-width: 768px) {
 
-@media screen and (min-width: 34em) {
   .social_link {
-
   	a {
   		height: 48px;
   		width: 48px;
   	}
   }
-
 }

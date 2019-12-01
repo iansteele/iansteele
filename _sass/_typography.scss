@@ -1,51 +1,25 @@
 $font-display: 'Brandon-Grotesque', futura, sans-serif;
-/*$font-display: 'Merriweather', san-serif;*/
 $font-primary: 'Museo-Slab', serif;
 
+//--------------------------
+//    Variables
+//--------------------------
 
-.font-size-small {
+$font-size-small {
 	font-size: .75rem;
 }
 
-.font-size-regular {
+$font-size-regular {
 	font-size: 1rem;
 }
 
-.font-size-large {
+$font-size-large {
 	font-size: 1.5rem;
 }
 
 h3 {
 	color: $brand-secondary;
 	margin-bottom: 1.25rem;
-}
-
-.headline {
-	background-size: 200px;
-	background-repeat: no-repeat;
-	background-position: center;
-	font-size: 1.25rem;
-	max-width: 90%;
-	margin: 0 auto;
-	min-height: 240px;
-}
-
-.callout {
-	font-size: 1.5rem;
-	font-weight: 700;
-	line-height: 2.5rem;
-	margin-bottom: 1rem;
-}
-
-.project_title {
-	font-size: 2rem;
-}
-
-.project_subtitle {
-	color: $brand-secondary;
-	font-size: 1em;
-	font-weight: normal;
-	margin-bottom: .5rem;
 }
 
 p {
@@ -81,11 +55,7 @@ p {
 }
 
 @media (min-width: 768px){
-  .headline {
-    font-size: 3rem;
-    letter-spacing: .25rem;
-    line-height: 5.5rem;
-  }
+
 }
 
 @media (min-width: 1200px){
