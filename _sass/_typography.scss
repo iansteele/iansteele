@@ -56,10 +56,13 @@ p {
 @media (min-width: 768px){
 	.headline {
 		font-size: $font-size--xl;
-		max-width: 50%;
+		max-width: 75%;
 	}
 }
 
 @media (min-width: 1200px){
-
+	.headline {
+		font-size: $font-size--xl;
+		max-width: 60%;
+	}
 }
