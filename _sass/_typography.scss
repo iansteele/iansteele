@@ -63,7 +63,10 @@ p {
 }
 
 @media (min-width: 768px){
-
+	.headline {
+		font-size: $font-size--xl;
+		max-width: 50%;
+	}
 }
 
 @media (min-width: 1200px){
