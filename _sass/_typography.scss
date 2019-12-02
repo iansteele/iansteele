@@ -53,6 +53,10 @@ p {
 	color: $brand-secondary;
 }
 
+.callout {
+	margin-bottom: 1rem;
+}
+
 @media (min-width: 768px){
 	.headline {
 		font-size: $font-size--xl;

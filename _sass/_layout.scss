@@ -33,7 +33,7 @@ main {
   background: $white;
   border-top: 1rem solid $brand-secondary;
   color: $brand-primary;
-  padding: 2rem 10%;
+  padding: 2rem 0 1rem 0;
   text-align: center;
 
   * {
@@ -78,7 +78,7 @@ footer {
   .about {
     padding-top: 4em;
     * {
-      max-width: 60%;
+      max-width: 600px;
     }
   }
 }
