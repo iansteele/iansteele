@@ -86,6 +86,7 @@ footer {
 @media only screen and (orientation: landscape) {
   header,
   .projects {
-    padding: 0 40pt !important;
+    max-width: 100%;
+    padding: 0 48pt !important;
   }
 }
