@@ -18,6 +18,31 @@ p {
 	text-align: center;
 }
 
+.headline {
+	background-size: 200px;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-size: 1.25rem;
+
+
+
+}
+
+.headline {
+	color: $white;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+	font-family: $font-display;
+	font-size: $font-size-l;
+	font-weight: 900;
+	justify-content: center;
+	line-height: 1.5;
+	max-width: 90%;
+	margin: 0 auto;
+	min-height: 240px;
+}
+
 .label {
 	color: #AAA;
 	font-size: .625rem;
