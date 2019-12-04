@@ -20,18 +20,12 @@ p {
 
 .headline {
 	color: $white;
-	display: flex;
-	flex-direction: column;
-	flex-grow: 2;
 	font-family: $font-display;
 	font-size: $font-size-l;
 	font-weight: 900;
-	justify-content: center;
 	line-height: 1.5;
 	max-width: 90%;
-	margin: 0 auto;
-	min-height: 240px;
-	padding: $spacing--xl 0;
+	margin: 0 auto $spacing--xl auto;
 }
 
 .label {
@@ -55,6 +49,7 @@ p {
 
 .callout {
 	margin-bottom: 1rem;
+	max-width: 75%;
 }
 
 @media (min-width: 768px){
