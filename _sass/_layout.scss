@@ -44,6 +44,7 @@ footer {
   display: grid;
   grid-gap: $spacing--s;
   grid-template-columns: 1fr;
+  max-width: 95%;
   padding-bottom: $spacing--xl;
   padding-top: $spacing--xl;
 }
@@ -56,6 +57,7 @@ footer {
 
   .projects {
     grid-gap: $spacing--m;
+    max-width: 100%;
   }
 }
 
