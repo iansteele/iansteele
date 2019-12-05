@@ -49,8 +49,10 @@ footer {
 }
 
 @media (min-width: 768px) {
-
-
+  .projects{
+    padding-bottom: $spacing--xl;
+    padding-top: $spacing--xl;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -64,6 +66,7 @@ footer {
   header,
   .projects {
     max-width: 100%;
-    padding: 0 48pt !important;
+    padding-left: 48pt;
+    padding-right: 48pt;
   }
 }

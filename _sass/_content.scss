@@ -3,28 +3,32 @@
 --------------------------- */
 
 .hero {
-	background: url(../img/hero-background.png);
+	background-image: url(../img/hero-background.png);
+	background-position: bottom center;
 	background-size: cover;
-	padding-top: $spacing--xl;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: $spacing--l;
+	padding: 2rem 0;
 	position: relative;
 	text-align: center;
-	justify-content: center;
-	min-height: 360px;
 
-	> img {
-		display: block;
-		// border: .25rem solid $brand-secondary;
-		// border-radius: 50%;
-		margin: 0 auto 1rem auto;
-		width: 10rem;
+	.hero-content {
+		margin: 16% auto;
+		width: 100%;
 	}
 
 	.caret {
-		border-left: 8px solid transparent;
-		border-right: 8px solid transparent;
-		border-top: 8px solid $brand-secondary;
+		border-left: $spacing--s solid transparent;
+		border-right: $spacing--s solid transparent;
+		border-top: $spacing--s solid $brand-secondary;
+		bottom: $spacing--l;
 		height: 0;
-		margin: 0 auto $spacing--xl auto;
+		left: 50%;
+		margin: 0 auto;
+		position: absolute;
+		transform: translateX(-50%);
 		width: 0;
 	}
 }
@@ -33,14 +37,17 @@
   background: $white;
   border-top: 1rem solid $brand-secondary;
   color: $brand-primary;
-  padding: 2rem 1rem 1rem 1rem;
   text-align: center;
 
-  * {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 95%;
-  }
+	> img {
+		display: block;
+		// border: .25rem solid $brand-secondary;
+		// border-radius: 50%;
+		margin: $spacing--l auto;
+		max-width: 160px;
+		width: 40%;
+	}
+
 }
 
 .footer {
@@ -56,9 +63,6 @@
 
 @media screen and (min-width: 768px) {
 	.hero {
-		align-items: center;
-		justify-content: center;
-		min-height: 34em;
 	}
 }
 
