@@ -42,7 +42,7 @@ footer {
 .projects {
   @include center-block;
   display: grid;
-  grid-gap: $spacing--s;
+  grid-gap: $spacing--m;
   grid-template-columns: 1fr;
   max-width: 95%;
   padding-bottom: $spacing--xl;
@@ -56,7 +56,6 @@ footer {
 @media (min-width: 1200px) {
 
   .projects {
-    grid-gap: $spacing--m;
     max-width: 100%;
   }
 }
