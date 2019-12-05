@@ -3,19 +3,9 @@
 --------------------------- */
 
 .hero {
-	background-image: url(../img/hero-background.png);
-	background-position: bottom center;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin-bottom: $spacing--l;
-	padding: 2rem 0;
 	position: relative;
-	text-align: center;
 
 	.hero-content {
-		margin: 16% auto;
 		width: 100%;
 	}
 
@@ -23,7 +13,7 @@
 		border-left: $spacing--s solid transparent;
 		border-right: $spacing--s solid transparent;
 		border-top: $spacing--s solid $brand-secondary;
-		bottom: $spacing--l;
+		bottom: 0;
 		height: 0;
 		left: 50%;
 		margin: 0 auto;
@@ -35,26 +25,37 @@
 
 .about {
   background: $white;
-  border-top: 1rem solid $brand-secondary;
   color: $brand-primary;
+	padding: $spacing--l $spacing--m;
   text-align: center;
 
 	> img {
+		@include center-block;
+		border-radius: 100%;
 		display: block;
-		// border: .25rem solid $brand-secondary;
-		// border-radius: 50%;
-		margin: $spacing--l auto;
+		margin-bottom: $spacing--l;
 		max-width: 160px;
 		width: 40%;
+	}
+
+	p {
+		@include center-block;
+		max-width: 560px;
 	}
 
 }
 
 .footer {
-	background: white;
-	display: block;
-	padding: 2rem 0;
+	background: $brand-tertiary;
+	border-top: 1px solid $brand-darken-tertiary;
+	display: flex;
+	flex-direction: column;
+	padding: $spacing--xl;
 	text-align: center;
+
+	.btn {
+		margin-bottom: $spacing--l;
+	}
 }
 
 //--------------------------
@@ -62,13 +63,25 @@
 //--------------------------
 
 @media screen and (min-width: 768px) {
-	.hero {
+	.about {
+		padding: 4em;
+	}
+}
+.footer {
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+
+	.cta * {
+		display: inline-block;
+	}
+
+	.btn {
+		margin-bottom: 0;
+		margin-left: $spacing--m;
 	}
 }
 
 @media (min-width: 1200px) {
 
-  .about {
-    padding-top: 4em;
-  }
 }

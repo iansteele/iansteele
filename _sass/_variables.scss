@@ -4,7 +4,7 @@
 
 $font-size--s: .75rem;
 $font-size--m: 1rem;
-$font-size-l: 1.5rem;
+$font-size--l: 1.5rem;
 $font-size--xl: 3rem;
 
 //--------------------------
@@ -22,11 +22,11 @@ $spacing--xl: 3rem;
 
 $black: #1a151b;
 $white: #FFF;
-$brand-primary: #1a151b;
+$brand-primary: #1b161c;
 $brand-secondary: #AF7247;
-$light-gray: #C1C1BC;
-$medium-gray: #7F807C;
-$darker-gray: #41413D;
+$brand-tertiary: #f6f6f6;
+$brand-darken-tertiary: darken($brand-tertiary, 10%);
+$light-gray: #bbbcce;
 
 //--------------------------
 // Breakpoints
@@ -34,3 +34,12 @@ $darker-gray: #41413D;
 
 $breakpoint-medium: "(min-width: 768px)";
 $breakpoint-large: "(min-width: 1200px)";
+
+//--------------------------
+// Mixins
+// --------------------------
+
+@mixin center-block {
+  margin-left: auto;
+  margin-right: auto;
+}

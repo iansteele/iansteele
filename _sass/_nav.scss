@@ -4,6 +4,7 @@ nav {
 }
 
 header {
+	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 1rem;
@@ -13,9 +14,9 @@ header {
 }
 
 .logo {
-	color: $white;
-	fill: $white;
-	font-size: $font-size--m;
+	color: $brand-primary;
+	fill: $brand-primary;
+	font-size: $font-size--l;
 	font-weight: 900;
 	padding: .5rem 0;
 	text-align: center;

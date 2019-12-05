@@ -2,7 +2,6 @@ $font-display: 'Brandon-Grotesque', futura, sans-serif;
 $font-primary: 'Museo-Slab', serif;
 
 h3 {
-	color: $brand-secondary;
 	font-size: $font-size--m;
 	font-weight: 100;
 	margin-bottom: 1.25rem;
@@ -19,10 +18,10 @@ p {
 }
 
 .headline {
-	color: $white;
+	color: $brand-primary;
 	font-family: $font-display;
-	font-size: $font-size-l;
-	font-weight: 900;
+	font-size: $font-size--l;
+	font-weight: 100;
 	line-height: 1.5;
 	max-width: 80%;
 	margin: $spacing--l auto;
@@ -48,6 +47,7 @@ p {
 }
 
 .callout {
+	font-weight: 100;
 	margin: 1rem auto;
 	max-width: 75%;
 }
@@ -57,11 +57,15 @@ p {
 		font-size: $font-size--xl;
 		max-width: 75%;
 	}
+
+	.callout {
+		font-size: 2rem;
+	}
 }
 
 @media (min-width: 1200px){
 	.headline {
-		font-size: $font-size--xl;
+		font-size: 6rem;
 		max-width: 60%;
 	}
 }

@@ -13,7 +13,15 @@
 	svg {
 	 	fill: $brand-primary;
 		height: 100%;
+		transition: fill .5s ease;
 		width: 100%;
+	}
+
+	&:hover {
+		svg {
+			fill: $brand-secondary;
+			transition: fill .5s ease;
+		}
 	}
 
 }

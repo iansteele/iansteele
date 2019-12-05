@@ -2,30 +2,19 @@
 // Projects
 //--------------------------
 
-.case-study-wrapper {
-	max-width: 1200px;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 2rem;
-}
-
-.projects {
-	margin-bottom: 3rem;
-}
-
 .project {
 	border-radius: .25em;
-	// box-shadow: rgba(0,0,0,.4) 0 0 1em 0;
-	display: inline-block;
-	flex-basis: 100%;
+	box-shadow: rgba(0,0,0,.1) 0 .25rem 1em 0;
+	height: 0;
+	padding-top: 75%;
 	position: relative;
 	overflow: hidden;
 
 	&:hover {
-		box-shadow: rgba(0,0,0,.4) 0 0 2em 0;
+		// box-shadow: rgba(0,0,0,.2) 0 0 1em 0;
 
 		.project_thumbnail-description {
-			opacity: 1;
+			// opacity: 1;
 			transition: opacity .25s ease-in;
 		}
 
@@ -45,15 +34,16 @@
 	pointer-events: none;
 }
 
-.project_thumbnail {
-	box-shadow: rgba(0,0,0,.15) 0 0 .5rem .25rem;
+.project--thumbnail {
 	height: auto;
+	left: 0;
+	position: absolute;
+	top: 0;
 	transition: transform .5s ease;
-	vertical-align: top;
 	width: 100%;
 }
 
-.project_thumbnail-description {
+.project--thumbnail-description {
 	align-items: center;
 	background: rgba( $black, .7 );
 	color: white;
@@ -78,6 +68,13 @@
 	}
 }
 
+.case-study-wrapper {
+	max-width: 1200px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2rem;
+}
+
 .project_title {
 	font-size: 1.5rem;
 }
@@ -90,7 +87,7 @@
 }
 
 .project-description {
-	border-bottom: 1px solid #353535;
+	border-bottom: 1px solid $brand-tertiary;
 	margin-bottom: 2rem;
 	padding-bottom: 1em;
 }
@@ -112,14 +109,14 @@
 }
 
 .section {
-	margin: 2rem 0 4rem 0;
+	margin-top: $spacing--xl;
 
 	h3:before {
-		background: #353535;
+		background: $brand-darken-tertiary;
 		content: "";
 		display: block;
-		height: 2px;
-		margin-bottom: $spacing--m;
+		height: 1px;
+		margin-bottom: $spacing--xl;
 		width: 10%;
 	}
 }
@@ -131,8 +128,7 @@
 	img{
 		box-shadow: rgba(0,0,0,.5) 0 0 1em;
 		margin-bottom: 1rem;
-		margin-left: auto;
-		margin-right: auto;
+		@include center-block;
 		max-width: 800px;
 	}
 }
@@ -155,7 +151,7 @@
 
 	.section {
 		h3 {
-			font-size: $font-size-l;
+			font-size: $font-size--l;
 			text-transform: uppercase;
 		}
 	}
@@ -176,6 +172,8 @@
 	.image-group {
 		flex-direction: row;
 		flex-wrap: wrap;
+		margin-top: $spacing--xl;
+
 		img {
 			max-width: 100%;
 			width: 450px;
@@ -187,6 +185,5 @@
 
 	.projects {
 		grid-template-columns: 1fr 1fr 1fr;
-		margin-bottom: 4rem;
 	}
 }
