@@ -50,14 +50,13 @@ footer {
 }
 
 @media (min-width: 768px) {
-
+  .projects {
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1200px) {
 
-  .projects {
-    max-width: 100%;
-  }
 }
 
 @media only screen and (orientation: landscape) {
