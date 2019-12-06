@@ -1,11 +1,18 @@
 .btn {
   background: $brand-primary;
+  border-radius: 0;
   color: white;
   font-size: 1rem;
   letter-spacing: 2px;
   padding: .5em 1.5em;
   text-align: center;
   text-transform: uppercase;
+  transition: border-radius .5s ease;
+
+  &:hover{
+    border-radius: .5em;
+    transition: border-radius .5s ease;
+  }
 }
 
 .button--text {
