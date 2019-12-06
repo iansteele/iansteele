@@ -50,7 +50,7 @@
 	border-top: 1px solid $brand-darken-tertiary;
 	display: flex;
 	flex-direction: column;
-	padding: $spacing--xl 2.5%;
+	padding: $spacing--xl 48pt;
 	text-align: center;
 
 	.btn {
@@ -68,7 +68,7 @@
 
 @media screen and (min-width: 768px) {
 	.about {
-		padding: 4em;
+		padding: 2em 4em 4em 4em;
 	}
 
 	.footer {

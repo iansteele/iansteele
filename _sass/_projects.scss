@@ -3,7 +3,7 @@
 //--------------------------
 
 .project {
-	border-radius: .25em;
+	border-radius: .5em;
 	box-shadow: rgba(0,0,0,.1) 0 .25rem 1em 0;
 	height: 0;
 	padding-top: 75%;
@@ -77,19 +77,21 @@
 
 .project_title {
 	font-size: 1.5rem;
+	font-weight: 100;
+	line-height: 1.5;
 }
 
 .project_subtitle {
 	color: $brand-secondary;
 	font-size: 1em;
-	font-weight: normal;
+	font-weight: bold;
 	margin-bottom: .5rem;
 }
 
 .project-description {
 	border-bottom: 1px solid $brand-tertiary;
-	margin-bottom: 2rem;
-	padding-bottom: 1em;
+	margin-bottom: $spacing--m;
+	padding-bottom:$spacing--m;
 }
 
 .project-tags {
@@ -97,19 +99,16 @@
 	font-weight:700;
 
 	li {
-		background: rgba(255,255,255,.05);
-		border-radius: 1em;
-		color: $white;
+		color: $light-gray;
 		display: inline-block;
 		font-size: .75em;
 		margin-bottom: .25rem;
 		margin-left: .25rem;
-		padding: .125rem .5rem;
 	}
 }
 
 .section {
-	margin-top: $spacing--xl;
+	margin-top: $spacing--m;
 
 	h3:before {
 		background: $brand-darken-tertiary;
@@ -176,6 +175,7 @@
 
 		img {
 			max-width: 100%;
+			margin: $spacing--m;
 			width: 450px;
 		}
 	}

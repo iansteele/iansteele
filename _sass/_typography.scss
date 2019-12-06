@@ -13,6 +13,7 @@ p {
 	margin-bottom: 1em;
 }
 
+
 .center {
 	text-align: center;
 }
@@ -60,6 +61,10 @@ p {
 
 	.callout {
 		font-size: 2rem;
+	}
+
+	.section p {
+		max-width: 75%;
 	}
 }
 
