@@ -50,11 +50,15 @@
 	border-top: 1px solid $brand-darken-tertiary;
 	display: flex;
 	flex-direction: column;
-	padding: $spacing--xl;
+	padding: $spacing--xl 2.5%;
 	text-align: center;
 
 	.btn {
 		margin-bottom: $spacing--l;
+	}
+
+	.social {
+		margin-bottom: $spacing--xl;
 	}
 }
 
@@ -66,20 +70,26 @@
 	.about {
 		padding: 4em;
 	}
-}
-.footer {
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-between;
 
-	.cta * {
-		display: inline-block;
+	.footer {
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.cta * {
+			display: inline-block;
+		}
+
+		.btn {
+			margin-bottom: 0;
+			margin-left: $spacing--m;
+		}
+
+		.social {
+			margin-bottom: 0;
+		}
 	}
 
-	.btn {
-		margin-bottom: 0;
-		margin-left: $spacing--m;
-	}
 }
 
 @media (min-width: 1200px) {
