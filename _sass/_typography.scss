@@ -24,8 +24,7 @@ p {
 	font-size: $font-size--l;
 	font-weight: 100;
 	line-height: 1.5;
-	max-width: 80%;
-	margin: $spacing--l auto;
+	margin: $spacing--s auto;
 }
 
 .label {
@@ -56,7 +55,6 @@ p {
 @media (min-width: 768px){
 	.headline {
 		font-size: $font-size--xl;
-		max-width: 75%;
 	}
 
 	.callout {
@@ -69,7 +67,5 @@ p {
 }
 
 @media (min-width: 1200px){
-	.headline {
-		max-width: 60%;
-	}
+
 }

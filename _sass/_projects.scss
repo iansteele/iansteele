@@ -108,14 +108,15 @@
 }
 
 .section {
-	margin-top: $spacing--m;
+	margin-bottom: $spacing--xl;
+	margin-top: $spacing--xl;
 
 	h3:before {
 		background: $brand-darken-tertiary;
 		content: "";
 		display: block;
 		height: 1px;
-		margin-bottom: $spacing--xl;
+		margin-bottom: $spacing--m;
 		width: 10%;
 	}
 }
@@ -150,7 +151,7 @@
 
 	.section {
 		h3 {
-			font-size: $font-size--l;
+			font-size: $font-size--m;
 			text-transform: uppercase;
 		}
 	}

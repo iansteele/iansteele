@@ -13,7 +13,7 @@
 		border-left: $spacing--s solid transparent;
 		border-right: $spacing--s solid transparent;
 		border-top: $spacing--s solid $brand-secondary;
-		bottom: 0;
+		bottom: -$spacing--s;
 		height: 0;
 		left: 50%;
 		margin: 0 auto;
@@ -21,12 +21,16 @@
 		transform: translateX(-50%);
 		width: 0;
 	}
+
+	p {
+		margin-bottom: 0;
+	}
 }
 
 .about {
   background: $white;
   color: $brand-primary;
-	padding: $spacing--l $spacing--m;
+	padding: $spacing--l 5%;
   text-align: center;
 
 	> img {
@@ -68,7 +72,7 @@
 
 @media screen and (min-width: 768px) {
 	.about {
-		padding: 2em 4em 4em 4em;
+		padding: $spacing--xl;
 	}
 
 	.footer {
@@ -93,5 +97,7 @@
 }
 
 @media (min-width: 1200px) {
-
+	.about {
+		padding: calc(#{$spacing--xl} * 2);
+	}
 }
