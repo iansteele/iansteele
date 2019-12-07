@@ -35,11 +35,14 @@
 
 	> img {
 		@include center-block;
+		border: .25rem solid $white;
 		border-radius: 100%;
+		box-shadow: 0 2px $spacing--s rgba(0,0,0,.1);
 		display: block;
 		margin-bottom: $spacing--l;
 		max-width: 160px;
 		width: 40%;
+
 	}
 
 	p {
@@ -54,15 +57,19 @@
 	border-top: 1px solid $brand-darken-tertiary;
 	display: flex;
 	flex-direction: column;
-	padding: $spacing--xl 48pt;
+	padding: $spacing--xl;
 	text-align: center;
 
+	p {
+		margin-bottom: $spacing--s;
+	}
+
 	.btn {
-		margin-bottom: $spacing--l;
+		margin-bottom: $spacing--m;
 	}
 
 	.social {
-		margin-bottom: $spacing--xl;
+		margin-top: $spacing--m;
 	}
 }
 
@@ -71,6 +78,13 @@
 //--------------------------
 
 @media screen and (min-width: 768px) {
+
+	header,
+	main,
+	footer {
+		padding: 1rem 3rem;
+	}
+
 	.about {
 		padding: $spacing--xl;
 	}
@@ -90,7 +104,7 @@
 		}
 
 		.social {
-			margin-bottom: 0;
+			margin-top: 0;
 		}
 	}
 

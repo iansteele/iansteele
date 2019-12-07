@@ -7,7 +7,6 @@ header {
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 1rem;
 	text-align: center;
 	text-transform: uppercase;
 	z-index: 10;
@@ -74,7 +73,6 @@ nav {
 
 	header {
 		flex-direction: row;
-		padding: 1rem 2rem;
 	}
 
 	.logo {
@@ -93,7 +91,7 @@ nav {
 	}
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
 	.logo {
 	  margin-bottom: 0;

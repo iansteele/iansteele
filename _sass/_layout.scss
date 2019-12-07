@@ -50,6 +50,7 @@ footer {
 }
 
 @media (min-width: 768px) {
+
   .projects {
     max-width: 100%;
   }
@@ -60,9 +61,5 @@ footer {
 }
 
 @media only screen and (orientation: landscape) {
-  header,
-  .main-wrapper {
-    padding-left: 48pt;
-    padding-right: 48pt;
-  }
+
 }
