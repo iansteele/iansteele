@@ -2,8 +2,8 @@
   <h2 class="project_title">{{ page.title }}</h2>
   <span class="project_subtitle">{{ page.subtitle }}</span>
     <ul class="project-tags">
-      {% for item in page.tags %}
+      {%- for item in page.tags -%}
         <li>{{ item }}</li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
 </div>

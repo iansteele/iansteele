@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
+  {%- include head.html -%}
   <body>
     <div class="page">
-      {% include header.html %}
+      {%- include header.html -%}
       <main class="main-wrapper" aria-label="content">
       	<div class="hero">
           <div class="hero-content">
-            <div class="about">
-          		<img  src=/assets/img/ian.png alt="Consider yourself lucky you can't see this ugly mug">
-          		<h1 class="headline">I design
-          		B2B interfaces at <a href="https://www.untappd.com" class="link">Untappd</a>.
-          	</h1>
-          		<p>Previously I have worked at
-          			<a href="https://www.learnzillion.com">LearnZillion</a>,
-          			<a href="https://www.kohactive.com">
-          				kohactive
-          			</a>, and
-          			<a href="https://www.commandtransportation.com">Command
-          			Transportation</a>. I'm always interested in taking on new projects, talking shop, and meeting new folks.
-          		</p>
-          	</div>
+        		<img  src=/assets/img/ian.png alt="Consider yourself lucky you can't see this ugly mug">
+        		<h1 class="headline">
+              I design B2B interfaces at
+              <a href="https://www.untappd.com" class="link">Untappd</a>
+              .
+        	  </h1>
+        		<p>Previously I have worked at
+        			<a href="https://www.learnzillion.com">LearnZillion</a>,
+        			<a href="https://www.kohactive.com">
+        				kohactive
+        			</a>, and
+        			<a href="https://www.commandtransportation.com">Command
+        			Transportation</a>. I'm always interested in taking on new projects, talking shop, and meeting new folks.
+        		</p>
           </div>
       		<div class="caret">
       		</div>
       	</div>
       	<div class="projects" id="work">
-        {% assign sorted_projects = site.projects | sort: 'order' %}
-        {% for project in sorted_projects %}
-        {% if project.url %}
+        {%- assign sorted_projects = site.projects | sort: 'order' -%}
+        {%- for project in sorted_projects -%}
+        {%- if project.url -%}
           <a href="{{ project.url }}" class="project project__manual-grading">
             <img class="project--thumbnail" src="{{ project.thumbnail}}" alt="">
             <span class="project_thumbnail-description">
@@ -36,11 +36,11 @@
               <h3>{{ project.subtitle }}</h3>
             </span>
           </a>
-        {% endif %}
-        {% endfor %}
+        {%- endif -%}
+        {%- endfor -%}
       	</div>
       </main>
-      {% include footer.html %}
+      {%- include footer.html -%}
     </div>
   </body>
 </html>

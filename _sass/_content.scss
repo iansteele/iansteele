@@ -6,11 +6,11 @@ header{
 }
 
 .hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: $spacing--l;
 	position: relative;
-
-	.hero-content {
-		width: 100%;
-	}
 
 	.caret {
 		border-left: $spacing--s solid transparent;
@@ -25,12 +25,9 @@ header{
 		width: 0;
 	}
 
-	p {
-		margin-bottom: 0;
-	}
 }
 
-.about {
+.hero-content {
   background: $white;
   color: $brand-primary;
 	padding: $spacing--l 5%;
@@ -50,6 +47,7 @@ header{
 
 	p {
 		@include center-block;
+		margin-bottom: 0;
 		max-width: 560px;
 	}
 
@@ -83,12 +81,19 @@ header{
 @media screen and (min-width: 768px) {
 
 	header,
-	main,
 	footer {
-		padding: 1rem 3rem;
+		padding: $spacing--m $spacing--xl;
 	}
 
-	.about {
+	.main-wrapper {
+		padding: 0 $spacing--xl;
+	}
+
+	.hero {
+		min-height: 75vh;
+	}
+
+	.hero-content {
 		padding: $spacing--xl;
 	}
 
@@ -114,7 +119,5 @@ header{
 }
 
 @media (min-width: 1200px) {
-	.about {
-		padding: calc(#{$spacing--xl} * 2);
-	}
+
 }

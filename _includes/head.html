@@ -2,22 +2,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if page.summary %}
+  {%- if page.summary -%}
     <meta name="description" content="{{ page.summary | escape }}">
-  {% endif %}
-  {%if page.tags %}
+  {%- endif -%}
+  {%-if page.tags -%}
   <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}"/>
-  {%endif %}
-  {% if page.title %}
+  {%-endif -%}
+  {%- if page.title -%}
     <title>{{ page.title }}</title>
-  {% else page.title == blank %}
+  {%- else page.title == blank -%}
     <title>Ian Steele: Design & Illustration</title>
-  {% endif %}
+  {%- endif -%}
   <link rel="stylesheet" href="https://use.typekit.net/ijq3mft.css">
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="shortcut icon" type="image/png" href="favicon.png">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  {% if site.google_analytics and jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
+  {%- if site.google_analytics and jekyll.environment == 'production' -%}
+  {%- include analytics.html -%}
+  {%- endif -%}
 </head>
