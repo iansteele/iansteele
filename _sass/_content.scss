@@ -28,9 +28,12 @@ header{
 }
 
 .hero-content {
+	@include center-block;
   background: $white;
   color: $brand-primary;
-	padding: $spacing--l 5%;
+	max-width: 90%;
+	padding-bottom: $spacing--l;
+	padding-top: $spacing--l;
   text-align: center;
 
 	> img {
@@ -42,13 +45,11 @@ header{
 		margin-bottom: $spacing--l;
 		max-width: 160px;
 		width: 40%;
-
 	}
 
 	p {
 		@include center-block;
 		margin-bottom: 0;
-		max-width: 560px;
 	}
 
 }
@@ -78,6 +79,7 @@ header{
 // Media Queries
 //--------------------------
 
+
 @media screen and (min-width: 768px) {
 
 	header,
@@ -90,11 +92,16 @@ header{
 	}
 
 	.hero {
-		min-height: 75vh;
+		min-height: 50vh;
 	}
 
 	.hero-content {
-		padding: $spacing--xl;
+		padding-bottom: $spacing--xl;
+		padding-top: $spacing--xl;
+		p {
+			font-size: 125%;
+			max-width: 75%;
+		}
 	}
 
 	.footer {
@@ -119,5 +126,10 @@ header{
 }
 
 @media (min-width: 1200px) {
-
+	.hero-content {
+		max-width: 1200px;
+		p {
+			max-width: 75%;
+		}
+	}
 }

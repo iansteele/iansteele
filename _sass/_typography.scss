@@ -21,10 +21,11 @@ p {
 .headline {
 	color: $brand-primary;
 	font-family: $font-display;
-	font-size: $font-size--xl;
-	font-weight: 100;
-	line-height: 1.5;
+	font-size: 225%;
+	font-weight: 700;
+	line-height: 1.25;
 	margin: $spacing--s auto;
+	text-transform: uppercase;
 }
 
 .label {
