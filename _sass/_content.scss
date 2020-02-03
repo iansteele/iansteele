@@ -1,135 +1,134 @@
 /* --------------------------
   Base Styles
 --------------------------- */
-header{
-		padding: $spacing--l;
+header {
+  padding: $spacing--l;
 }
 
 .hero {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-bottom: $spacing--l;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: $spacing--l;
+  position: relative;
 
-	.caret {
-		border-left: $spacing--s solid transparent;
-		border-right: $spacing--s solid transparent;
-		border-top: $spacing--s solid $brand-secondary;
-		bottom: -$spacing--s;
-		height: 0;
-		left: 50%;
-		margin: 0 auto;
-		position: absolute;
-		transform: translateX(-50%);
-		width: 0;
-	}
-
+  .caret {
+    border-left: $spacing--s solid transparent;
+    border-right: $spacing--s solid transparent;
+    border-top: $spacing--s solid $brand-secondary;
+    bottom: -$spacing--s;
+    height: 0;
+    left: 50%;
+    margin: 0 auto;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 0;
+  }
 }
 
 .hero-content {
-	@include center-block;
+  @include center-block;
   background: $white;
   color: $brand-primary;
-	max-width: 90%;
-	padding-bottom: $spacing--l;
-	padding-top: $spacing--l;
+  max-width: 90%;
+  padding-bottom: $spacing--l;
+  padding-top: $spacing--l;
   text-align: center;
 
-	> img {
-		@include center-block;
-		border: .25rem solid $white;
-		border-radius: 100%;
-		box-shadow: 0 2px $spacing--s rgba(0,0,0,.1);
-		display: block;
-		margin-bottom: $spacing--l;
-		max-width: 160px;
-		width: 40%;
-	}
+  > img {
+    @include center-block;
+    border: 0.25rem solid $white;
+    border-radius: 100%;
+    box-shadow: 0 2px $spacing--s rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-bottom: $spacing--l;
+    max-width: 160px;
+    width: 40%;
+  }
 
-	p {
-		@include center-block;
-		margin-bottom: 0;
-	}
-
+  p {
+    @include center-block;
+    margin-bottom: 0;
+  }
 }
 
 .footer {
-	background: $brand-tertiary;
-	border-top: 1px solid $brand-darken-tertiary;
-	display: flex;
-	flex-direction: column;
-	padding: $spacing--xl;
-	text-align: center;
+  background: $brand-tertiary;
+  border-top: 1px solid $brand-darken-tertiary;
+  display: flex;
+  flex-direction: column;
+  padding: $spacing--xl;
+  text-align: center;
 
-	p {
-		margin-bottom: $spacing--s;
-	}
+  p {
+    margin-bottom: $spacing--s;
+  }
 
-	.btn {
-		margin-bottom: $spacing--m;
-	}
+  .btn {
+    margin-bottom: $spacing--m;
+  }
 
-	.social {
-		margin-top: $spacing--m;
-	}
+  .social {
+    margin-top: $spacing--m;
+  }
 }
 
 //--------------------------
 // Media Queries
 //--------------------------
 
-
 @media screen and (min-width: 768px) {
+  header,
+  footer {
+    padding: $spacing--m $spacing--xl;
+  }
 
-	header,
-	footer {
-		padding: $spacing--m $spacing--xl;
-	}
+  .main-wrapper {
+    padding: 0 $spacing--xl;
+  }
 
-	.main-wrapper {
-		padding: 0 $spacing--xl;
-	}
+  .hero {
+    min-height: 50vh;
+  }
 
-	.hero {
-		min-height: 50vh;
-	}
+  .hero-content {
+    padding-bottom: $spacing--xl;
+    padding-top: $spacing--xl;
+    p {
+      font-size: 150%;
+      max-width: 75%;
+    }
+  }
 
-	.hero-content {
-		padding-bottom: $spacing--xl;
-		padding-top: $spacing--xl;
-		p {
-			font-size: 125%;
-			max-width: 75%;
-		}
-	}
+  .footer {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 
-	.footer {
-		align-items: center;
-		flex-direction: row;
-		justify-content: space-between;
+    .cta * {
+      display: inline-block;
+    }
 
-		.cta * {
-			display: inline-block;
-		}
+    .btn {
+      margin-bottom: 0;
+      margin-left: $spacing--m;
+    }
 
-		.btn {
-			margin-bottom: 0;
-			margin-left: $spacing--m;
-		}
-
-		.social {
-			margin-top: 0;
-		}
-	}
-
+    .social {
+      margin-top: 0;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
-	.hero-content {
-		max-width: 1200px;
-		p {
-			max-width: 75%;
-		}
-	}
+  .hero-content {
+    max-width: 1200px;
+    p {
+      max-width: 75%;
+    }
+    > img {
+      max-width: 208px;
+      width: 40%;
+    }
+  }
 }
