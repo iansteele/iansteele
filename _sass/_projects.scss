@@ -74,15 +74,14 @@
 }
 
 .project_title {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 100;
 	line-height: 1.5;
 }
 
 .project_subtitle {
 	color: $brand-secondary;
-	font-size: 1em;
-	font-weight: bold;
+	font-size: 1.5em;
 	margin-bottom: .5rem;
 }
 
@@ -101,7 +100,8 @@
 		display: inline-block;
 		font-size: .75em;
 		margin-bottom: .25rem;
-		margin-left: .25rem;
+		margin-right: 1rem;
+		text-transform: uppercase;
 	}
 }
 
