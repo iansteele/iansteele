@@ -9,8 +9,7 @@ header {
   display: flex;
   flex-direction: column;
   @include center-block;
-  background: $white;
-  color: $brand-primary;
+  color: $white;
   max-width: 90%;
   padding-bottom: $spacing--l;
   padding-top: $spacing--l;
