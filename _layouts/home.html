@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
-  <body>
-    <div class="page">
-      {%- include header.html -%}
-      <main class="main-wrapper" aria-label="content">
-      	<div class="hero">
-          <div class="hero-content">
-        		<img  src=/assets/img/ian.png alt="Consider yourself lucky you can't see this ugly mug">
-        		<h1 class="headline">
-              Designing digital experiences at
-              <a href="https://www.untappd.com" class="link">Untappd</a>.
-        	  </h1>
-        		<p>Hello, I'm Ian Steele. I am a digital product designer from southern Illinois. Previously I have worked at
-        			<a href="https://www.learnzillion.com">LearnZillion</a>,
-        			<a href="https://www.kohactive.com">
-        				kohactive
-        			</a>, and
-        			<a href="https://www.commandtransportation.com">Command
-        			Transportation</a>. I'm always interested in taking on new projects, talking shop, and meeting new folks.
-        		</p>
-          </div>
-      		<div class="caret">
-      		</div>
-      	</div>
-      	<div class="projects" id="work">
-        {%- assign sorted_projects = site.projects | sort: 'order' -%}
-        {%- for project in sorted_projects -%}
-        {%- if project.url -%}
+  <body class="container-fluid">
+    {%- include header.html -%}
+    <div class="main-wrapper row" aria-label="content">
+    	<div class="hero row justify-content-md-center">
+    		<img  src=/assets/img/ian.png alt="Consider yourself lucky you can't see this ugly mug">
+    		<h1 class="headline">
+          Designing digital experiences at
+          <a href="https://www.untappd.com" class="link">Untappd</a>.
+    	  </h1>
+    		<p class="">Hello, I'm Ian Steele. I am a digital product designer from southern Illinois. Previously I have worked at
+    			<a href="https://www.learnzillion.com">LearnZillion</a>,
+    			<a href="https://www.kohactive.com">
+    				kohactive
+    			</a>, and
+    			<a href="https://www.commandtransportation.com">Command
+    			Transportation</a>. I'm always interested in taking on new projects, talking shop, and meeting new folks.
+    		</p>
+    		<div class="row caret">
+    		</div>
+    	</div>
+    	<div class="projects row" id="work">
+      {%- assign sorted_projects = site.projects | sort: 'order' -%}
+      {%- for project in sorted_projects -%}
+      {%- if project.url -%}
+        <div class="col-md-6 col-lg-3">
           <a href="{{ project.url }}" class="project project__manual-grading">
-            <img class="project--thumbnail" src="{{ project.thumbnail}}" alt="">
-            <span class="project_thumbnail-description">
+            <img class="project-thumbnail" src="{{ project.thumbnail}}" alt="">
+            <!-- <span class="project_thumbnail-description">
               <h2>{{ project.title }}</h2>
               <h3>{{ project.subtitle }}</h3>
-            </span>
+            </span> -->
           </a>
-        {%- endif -%}
-        {%- endfor -%}
-      	</div>
-      </main>
-      {%- include footer.html -%}
+        </div>
+      {%- endif -%}
+      {%- endfor -%}
+    	</div>
     </div>
+    {%- include footer.html -%}
   </body>
 </html>

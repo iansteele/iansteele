@@ -7,44 +7,19 @@ body {
     height: 100%;
 }
 
-.page {
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	grid-template-columns: 1fr;
-	grid-template-areas:
-		"header"
-		"main"
-		"footer";
-	min-height: 100%;
-}
-
 // Header
-header {
-	grid-area: header;
-}
+
 
 main {
-	grid-area: main;
+
   margin:0 auto;
   overflow: hidden;
 }
 
-footer {
-	grid-area: footer;
-	grid-column-end: 3;
-}
-
-.hero {
-	grid-area: hero;
-	grid-row: 1 / 2;
-}
 
 .projects {
   @include center-block;
-  display: grid;
-  grid-gap: $spacing--m;
-  grid-template-columns: 1fr;
-  max-width: 95%;
+  width: 100%;
   padding-bottom: $spacing--xl;
   padding-top: $spacing--xl;
 }

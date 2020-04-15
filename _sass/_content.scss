@@ -8,25 +8,6 @@ header {
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: $spacing--l;
-  position: relative;
-
-  .caret {
-    border-left: $spacing--s solid transparent;
-    border-right: $spacing--s solid transparent;
-    border-top: $spacing--s solid $brand-secondary;
-    bottom: -$spacing--s;
-    height: 0;
-    left: 50%;
-    margin: 0 auto;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 0;
-  }
-}
-
-.hero-content {
   @include center-block;
   background: $white;
   color: $brand-primary;
@@ -34,6 +15,16 @@ header {
   padding-bottom: $spacing--l;
   padding-top: $spacing--l;
   text-align: center;
+
+  .caret {
+    border-left: $spacing--s solid transparent;
+    border-right: $spacing--s solid transparent;
+    border-top: $spacing--s solid $brand-secondary;
+    height: 0;
+    margin: 2rem auto 0 auto;
+    transform: translateX(-50%);
+    width: 0;
+  }
 
   > img {
     @include center-block;
@@ -85,19 +76,6 @@ header {
 
   .main-wrapper {
     padding: 0 $spacing--xl;
-  }
-
-  .hero {
-    min-height: 50vh;
-  }
-
-  .hero-content {
-    padding-bottom: $spacing--xl;
-    padding-top: $spacing--xl;
-    p {
-      font-size: 150%;
-      max-width: 75%;
-    }
   }
 
   .footer {
