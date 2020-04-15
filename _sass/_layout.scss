@@ -7,6 +7,13 @@ body {
     height: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+.body-content {
+  flex-grow: 1;
+}
 // Header
 
 
