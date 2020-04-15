@@ -70,7 +70,7 @@
 
 .project_title {
 	font-size: 2rem;
-	font-weight: 100;
+	font-weight: bold;
 	line-height: 1.5;
 	margin: 0;
 }
@@ -82,7 +82,6 @@
 }
 
 .project-description {
-	border-bottom: 1px solid $brand-tertiary;
 	margin-bottom: $spacing--m;
 	padding-bottom:$spacing--m;
 }
@@ -105,11 +104,17 @@
 	margin-bottom: $spacing--xl;
 	margin-top: $spacing--xl;
 
+	h3 {
+		font-weight: bold;
+		margin-bottom: $spacing--l;
+		color: $brand-secondary;
+	}
+
 	h3:before {
-		background: $brand-darken-tertiary;
+		background: $brand-secondary;
 		content: "";
 		display: block;
-		height: 1px;
+		height: 4px;
 		margin-bottom: $spacing--m;
 		width: 10%;
 	}

@@ -20,14 +20,22 @@ main {
 .projects {
   @include center-block;
   width: 100%;
-  padding-bottom: $spacing--xl;
-  padding-top: $spacing--xl;
+  margin-bottom: $spacing--m;
+  margin-top: $spacing--xl;
+
+  .project {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
 
   .projects {
     max-width: 100%;
+
+    .project {
+      margin-bottom: 0;
+    }
   }
 }
 

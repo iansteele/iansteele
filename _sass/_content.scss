@@ -11,29 +11,31 @@ header {
   @include center-block;
   color: $white;
   max-width: 90%;
-  padding-bottom: $spacing--l;
-  padding-top: $spacing--l;
+  padding-bottom: $spacing--xl;
+  padding-top: $spacing--xl;
+  position: relative;
   text-align: center;
 
   .caret {
     border-left: $spacing--s solid transparent;
     border-right: $spacing--s solid transparent;
     border-top: $spacing--s solid $brand-secondary;
+    bottom: 0;
     height: 0;
-    margin: 2rem auto 0 auto;
-    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    transform: translateX(50%);
     width: 0;
   }
 
-  > img {
+  img {
     @include center-block;
-    border: 0.25rem solid $white;
     border-radius: 100%;
     box-shadow: 0 2px $spacing--s rgba(0, 0, 0, 0.1);
     display: block;
     margin-bottom: $spacing--l;
-    max-width: 160px;
-    width: 40%;
+    max-width: 200px;
+    width: 50%;
   }
 
   p {
