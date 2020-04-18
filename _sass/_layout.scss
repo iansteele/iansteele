@@ -14,15 +14,6 @@ body {
 .body-content {
   flex-grow: 1;
 }
-// Header
-
-
-main {
-
-  margin:0 auto;
-  overflow: hidden;
-}
-
 
 .projects {
   @include center-block;

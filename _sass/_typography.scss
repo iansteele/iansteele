@@ -27,10 +27,11 @@ p {
 .headline {
 	color: $white;
 	font-family: $font-display;
-	font-size: 225%;
+	font-size: 2em;
 	font-weight: 700;
+	letter-spacing: .25rem;
 	line-height: 1.25;
-	margin: $spacing--s auto;
+	margin: 0 auto $spacing--s auto;
 	text-transform: uppercase;
 }
 
@@ -61,11 +62,16 @@ p {
 
 @media (min-width: 768px){
 	.headline {
-		font-size: $font-size--xl;
+		font-size: 3rem;
 	}
 
 	.callout {
 		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.25em;
+		margin-bottom: 1em;
 	}
 
 	.section p {
@@ -74,4 +80,7 @@ p {
 }
 
 @media (min-width: 1200px){
+	.headline {
+		font-size: 4rem;
+	}
 }

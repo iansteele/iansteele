@@ -10,9 +10,8 @@ header {
   flex-direction: column;
   @include center-block;
   color: $white;
-  max-width: 90%;
-  padding-bottom: $spacing--xl;
-  padding-top: $spacing--xl;
+  padding-bottom: 20%;
+  padding-top: 10%;
   position: relative;
   text-align: center;
 
@@ -71,6 +70,11 @@ header {
   header,
   footer {
     padding: $spacing--m $spacing--xl;
+  }
+
+  .hero{
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
 
   .main-wrapper {
