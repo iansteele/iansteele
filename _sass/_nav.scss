@@ -3,6 +3,11 @@ nav {
 	display: flex;
 }
 
+header,
+footer {
+	flex-shrink: 0;
+}
+
 header {
 	align-items: center;
 	flex-direction: column;

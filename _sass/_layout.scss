@@ -11,6 +11,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.column-v-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .body-content {
   flex-grow: 1;
 }
