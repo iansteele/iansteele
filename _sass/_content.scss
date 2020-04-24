@@ -10,8 +10,8 @@ header {
   flex-direction: column;
   @include center-block;
   color: $white;
-  padding-bottom: 10vh;
-  padding-top: 10vh;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
   position: relative;
   text-align: center;
 
@@ -28,13 +28,8 @@ header {
   }
 
   img {
-    @include center-block;
-    border-radius: 100%;
-    box-shadow: 0 2px $spacing--s rgba(0, 0, 0, 0.1);
-    display: block;
-    margin-bottom: $spacing--l;
-    max-width: 200px;
-    width: 50%;
+    max-width: 1200px;
+    margin: 1em auto 0 auto;
   }
 
   p {
