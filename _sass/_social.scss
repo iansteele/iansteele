@@ -9,6 +9,12 @@
 		padding: .5rem;
 		text-align: center;
 		width: 44px;
+
+		&:focus {
+			svg{
+				fill: white;
+			}
+		}
 	}
 
 	svg {

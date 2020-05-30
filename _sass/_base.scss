@@ -53,7 +53,14 @@ video {
 //--------------------------
 
 a {
+  border-bottom: 2px solid transparent;
   color: $brand-secondary;
   cursor: pointer;
   display: inline-block;
+  transition: border-color .2s ease;
+
+  &:focus {
+    outline: 0;
+    border-bottom: 2px solid $brand-secondary;
+  }
 }
