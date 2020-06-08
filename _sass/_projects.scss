@@ -37,6 +37,10 @@ a.project{
 		border-color: transparent;
 		padding: .5rem;
 	}
+	
+	&:active {
+		outline: 0;
+	}
 }
 
 .project_thumbnail,

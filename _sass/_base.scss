@@ -59,8 +59,16 @@ a {
   display: inline-block;
   transition: border-color .2s ease;
 
-  &:focus {
+  &:focus,
+  &:active {
     outline: 0;
+  }
+
+  &:focus {
     border-bottom: 2px solid $brand-secondary;
+  }
+
+  &:active {
+    border-color: transparent;
   }
 }
