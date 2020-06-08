@@ -34,7 +34,7 @@ a.project{
 	&:focus {
 		outline-offset: .25rem;
 		outline: .25rem solid $brand-secondary;
-		border-color: $brand-secondary;
+		border-color: transparent;
 		padding: .5rem;
 	}
 }
