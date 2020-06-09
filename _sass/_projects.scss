@@ -118,6 +118,9 @@ a.project{
 	margin-top: $spacing--xl;
 
 	h3 {
+		font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: .125em;
 		font-weight: bold;
 		margin-bottom: $spacing--l;
 		color: $brand-secondary;
@@ -158,7 +161,7 @@ a.project{
 
 	.section {
 		h3 {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			text-transform: uppercase;
 		}
 	}

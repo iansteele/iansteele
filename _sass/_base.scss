@@ -30,7 +30,8 @@ li {
   li {
     margin-bottom: 1rem;
 
-    &::before {
+
+    p:before {
       color: $brand-secondary;
       content: "\2022";
       display: inline-block;
