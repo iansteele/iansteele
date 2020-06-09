@@ -8,7 +8,8 @@
 	position: relative;
 	overflow: hidden;
 
-	&:hover {
+	&:hover,
+	&:focus {
 
 		.project_thumbnail-description {
 			// opacity: 1;
@@ -16,30 +17,24 @@
 		}
 
 		img {
-			transform: scale(1.02);
+			transform: scale(1.04);
 		}
 	}
 
 	.project_thumbnail-description,
 	img {
-		transition: transform .5s ease;
+		transition: transform .25s ease;
 	}
 }
 
 // Focus State
 a.project{
-
 	transform: border-color .5s ease, padding .5s ease;
 
 	&:focus {
-		outline-offset: .25rem;
-		outline: .25rem solid $brand-secondary;
+		outline: none;
+		border-bottom: 0;
 		border-color: transparent;
-		padding: .5rem;
-	}
-	
-	&:active {
-		outline: 0;
 	}
 }
 
