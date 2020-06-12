@@ -1,18 +1,17 @@
-//--------------------------
+//—————————
 // Projects
 //--------------------------
 
 .project {
 	border-radius: .5em;
 	box-shadow: rgba(0,0,0,.1) 0 .25rem 1em 0;
-	position: relative;
 	overflow: hidden;
+	position: relative;
 
 	&:hover,
 	&:focus {
 
 		.project_thumbnail-description {
-			// opacity: 1;
 			transition: opacity .25s ease-in;
 		}
 
@@ -28,13 +27,14 @@
 }
 
 // Focus State
-a.project{
+
+a.project {
 	transform: border-color .5s ease, padding .5s ease;
 
 	&:focus {
-		outline: none;
 		border-bottom: 0;
 		border-color: transparent;
+		outline: none;
 	}
 }
 
@@ -45,8 +45,8 @@ a.project{
 
 .project-thumbnail {
 	height: auto;
-	transition: transform .5s ease;
 	min-width: 100%;
+	transition: transform .5s ease;
 }
 
 .project-thumbnail-description {
@@ -118,9 +118,9 @@ a.project{
 	margin-top: $spacing--xl;
 
 	h3 {
+		color: $brand-secondary;
 		font-weight: bold;
 		margin-bottom: $spacing--l;
-		color: $brand-secondary;
 	}
 
 	h3:before {
@@ -187,8 +187,4 @@ a.project{
 			width: 450px;
 		}
 	}
-}
-
-@media (min-width: 1200px) {
-
 }
