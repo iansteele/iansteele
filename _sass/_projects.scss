@@ -94,11 +94,6 @@ a.project{
 	margin-bottom: .5rem;
 }
 
-.project-description {
-	margin-bottom: $spacing--m;
-	padding-bottom:$spacing--m;
-}
-
 .project-tags {
 	color: rgba(255,255,255,.25);
 	font-weight:700;
@@ -114,8 +109,8 @@ a.project{
 }
 
 .section {
-	margin-bottom: $spacing--xl;
-	margin-top: $spacing--xl;
+	margin-bottom: calc(#{$spacing--xl} + #{$spacing--m});
+	margin-top: calc(#{$spacing--xl} + #{$spacing--m});
 
 	h3 {
 		font-size: 1.25rem;

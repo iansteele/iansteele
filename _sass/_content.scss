@@ -28,7 +28,7 @@ header {
   }
 
   img {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 2em auto 0 auto;
   }
 
@@ -99,12 +99,10 @@ header {
 
 @media (min-width: 1200px) {
   .hero{
-    padding-bottom: 5vh;
-    padding-top: 10vh;
 
     img {
       margin-top: 5rem;
-      max-width: 1440px;
+      max-width: 1200px;
     }
 
     p {
