@@ -9,7 +9,7 @@
 	overflow: hidden;
 
 	.project_thumbnail-description {
-		background: linear-gradient(rgba( $brand-primary, 0 ) , $brand-primary);
+		background: linear-gradient( rgba( $brand-primary, 0) , rgba( $brand-primary, .8 ));
 		bottom: 0;
 		color: $white;
 		display: flex;
@@ -20,26 +20,36 @@
 		padding: .25rem 1rem;
 		position: absolute;
 		width: 100%;
-		* {
+		p {
 			font-weight: 700;
 			line-height: 1.5em;
-			margin-bottom: .25rem;
+			margin-bottom: .5rem;
 			text-transform: uppercase;
 		}
 	}
 
 	@media (hover: hover) {
 		.project_thumbnail-description {
+			background: linear-gradient( rgba( $brand-primary, 0 ) , rgba( $brand-primary, 0 ));
 			opacity: 0;
-			transition: opacity .25s ease-in;
+			bottom: 0;
+			transition: background 1s ease-out;
+			p {
+				transition: transform .25s ease-out;
+				transform: translateY(100%);
+			}
 		}
 
 		&:hover,
 		&:focus {
 
 			.project_thumbnail-description {
-				bottom: 0;
+				background: linear-gradient( rgba( $brand-primary, 0 ) , rgba( $brand-primary, 0.8 ));
 				opacity: 1;
+
+				p {
+					transform: translateY(0);
+				}
 			}
 
 			img {
