@@ -23,8 +23,6 @@ body {
 }
 
 .projects {
-  @include center-block;
-  width: 100%;
   margin-bottom: $spacing--m;
   margin-top: $spacing--m;
 
@@ -34,9 +32,9 @@ body {
 }
 
 @media (min-width: 768px) {
-
   .projects {
-    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

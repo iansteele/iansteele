@@ -8,12 +8,12 @@ header {
 .hero {
   display: flex;
   flex-direction: column;
-  @include center-block;
+  justify-content: center;
   color: $white;
-  padding-bottom: 2vh;
-  padding-top: 5vh;
+  min-height: 60vh;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   position: relative;
-  text-align: center;
 
   .caret {
     border-left: $spacing--s solid transparent;
@@ -34,8 +34,22 @@ header {
 
   h1 {
     max-width: 1080px;
-    margin-left: auto;
+    margin-bottom: 1em;
+    margin-left: 0;
     margin-right: auto;
+    .footnote {
+      position: relative;
+      &:after {
+        content: "*Because 🌮 & 🍻";
+        bottom: -1.25em;
+        color: $light-gray;
+        font-size: $font-size-sm;
+        line-height: $font-size-sm;
+        position: absolute;
+        left: 0;
+        width: max-content;
+      }
+    }
   }
 
   p {
@@ -69,8 +83,13 @@ header {
 
 @media screen and (min-width: 768px) {
   header,
-  footer {
+  .hero,
+  footer{
     padding: $spacing--m $spacing--xl;
+  }
+
+  .hero {
+    max-height: 800px;
   }
 
   .main-wrapper {

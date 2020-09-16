@@ -19,7 +19,6 @@ p {
 	margin-bottom: 1em;
 }
 
-
 .center {
 	text-align: center;
 }
@@ -31,8 +30,15 @@ p {
 	font-weight: 700;
 	letter-spacing: .25rem;
 	line-height: 1.25;
-	margin: 0 auto $spacing--s auto;
 	text-transform: uppercase;
+
+	a {
+		color: $brand-secondary;
+		&:hover {
+			text-decoration: underline;
+			text-decoration-color: $white;
+		}
+	}
 }
 
 .label {
@@ -61,8 +67,12 @@ p {
 }
 
 @media (min-width: 768px){
+
 	.headline {
 		font-size: 3rem;
+		line-height: 1.125em;
+		text-align: left;
+		margin-left: 0;
 	}
 
 	.callout {
@@ -75,7 +85,9 @@ p {
 }
 
 @media (min-width: 1200px){
+
 	.headline {
 		font-size: 4rem;
 	}
+
 }
