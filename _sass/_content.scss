@@ -10,8 +10,8 @@ header {
   flex-direction: column;
   justify-content: center;
   color: $white;
-  min-height: 60vh;
-  padding-bottom: 2rem;
+  min-height: 50vh;
+  padding-bottom: 3rem;
   padding-top: 2rem;
   position: relative;
 
@@ -19,7 +19,7 @@ header {
     border-left: $spacing--s solid transparent;
     border-right: $spacing--s solid transparent;
     border-top: $spacing--s solid $brand-secondary;
-    bottom: 1vh;
+    bottom: 1rem;
     height: 0;
     left: 50%;
     position: absolute;
@@ -41,12 +41,13 @@ header {
       position: relative;
       &:after {
         content: "*Because 🌮 & 🍻";
-        bottom: -1.25em;
+        bottom: -.75em;
         color: $light-gray;
-        font-size: $font-size-sm;
-        line-height: $font-size-sm;
+        font-size: 1rem;
         position: absolute;
-        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        transform: translateY(50%);
         width: max-content;
       }
     }
@@ -89,6 +90,7 @@ header {
   }
 
   .hero {
+    min-height: 60vh;
     max-height: 800px;
   }
 
