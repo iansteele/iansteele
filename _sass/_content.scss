@@ -62,19 +62,29 @@ header {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: $spacing--xl;
+  padding: $spacing--xl $spacing--m;
   text-align: center;
 
   p {
     margin-bottom: $spacing--s;
+    width: 100%;
   }
 
   .btn {
+    border-radius: 2rem;
     margin-bottom: $spacing--m;
+    width: fit-content;
   }
 
   .social {
     margin-top: $spacing--m;
+  }
+
+  .cta {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -102,18 +112,18 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    padding: 3rem;
 
-    .cta * {
-      display: inline-block;
+    p {
+      font-size: 1rem;
     }
 
     .btn {
       margin-bottom: 0;
-      margin-left: $spacing--m;
     }
 
     .social {
-      margin-top: 0;
+      margin: 0;
     }
   }
 }

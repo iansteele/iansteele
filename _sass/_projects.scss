@@ -7,10 +7,10 @@
 	box-shadow: rgba(0,0,0,.1) 0 .25rem 1em 0;
 	position: relative;
 	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(white, black);
 
 	.project_thumbnail-description {
 		background: $brand-primary;
-		border-radius: .5rem .5rem 0 0; ;
 		bottom: 0;
 		color: $white;
 		left: 50%;
