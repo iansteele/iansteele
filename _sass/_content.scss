@@ -2,7 +2,8 @@
   Base Styles
 --------------------------- */
 header {
-  padding: $spacing--l;
+  background: $brand-primary;
+  padding: $spacing--s $spacing--l;
 }
 
 .hero {
@@ -96,7 +97,7 @@ header {
   header,
   .hero,
   footer{
-    padding: $spacing--m $spacing--xl;
+    padding: $spacing--m $spacing--l;
   }
 
   .hero {

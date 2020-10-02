@@ -1,5 +1,12 @@
 header {
+	align-items: center;
 	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 10;
 }
 
 header,
@@ -7,21 +14,12 @@ footer {
 	flex-shrink: 0;
 }
 
-header {
-	align-items: center;
-	font-size: .825em;
-	justify-content: space-between;
-	text-align: center;
-	text-transform: uppercase;
-	z-index: 10;
-}
-
 .logo {
 	align-items: center;
 	color: $white;
 	display: flex;
 	fill: $white;
-	// font-size: 1.25em;
+	font-size: 1rem;
 	padding: .5rem 0;
 	text-align: center;
 
@@ -31,11 +29,12 @@ header {
   }
 
   h1 {
-		display: inline-flex;
-  	font-size: inherit;
+		display: none;
+		font-size: inherit;
 		font-weight: 900;
   	letter-spacing: .125rem;
   	margin: 0;
+		margin-left: .5em;
   }
 
   h1 span{
@@ -51,7 +50,6 @@ header {
   }
 
   svg {
-		margin-right: .375em;
   	border-radius: 50%;
   	height: 1.5em;
   	width: 1.5em;
@@ -59,16 +57,22 @@ header {
 }
 
 nav {
+	display: flex;
 	justify-content: space-around;
+
 
 	a {
 		color: $brand-secondary;
-		flex-basis: 100px;
-		font-size: .825em;
+		font-size: .75rem;
 		font-weight: bold;
+		flex-wrap: nowrap;
 		letter-spacing: .125em;
-		padding: .5rem;
+		padding: .5rem 0;
 		transition: color .5s ease;
+
+		&:not(:last-of-type) {
+			margin-right: 2em;
+		}
 
 		&:hover {
 			color: $white;
@@ -95,7 +99,7 @@ nav {
 	}
 
 	.logo {
-		font-size: 1.25em;
+		font-size: 1em;
 	  margin-bottom: 0;
 	}
 
@@ -103,7 +107,7 @@ nav {
 		justify-self: flex-end;
 
 		a {
-			padding: .5rem 0;
+			padding: .5rem;
 		}
 	}
 }

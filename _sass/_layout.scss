@@ -20,6 +20,7 @@ body {
 
 .body-content {
   flex-grow: 1;
+  margin-top: 5rem;
 }
 
 .projects {
@@ -29,6 +30,15 @@ body {
   .project {
     margin-bottom: 1rem;
   }
+}
+
+@media (orientation: landscape) {
+  .body-content{
+    margin-top: 60px;
+  }
+	h1 {
+		font-size: 1rem;
+	}
 }
 
 @media (min-width: 768px) {
