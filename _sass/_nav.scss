@@ -19,7 +19,7 @@ footer {
 	color: $white;
 	display: flex;
 	fill: $white;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	padding: .5rem 0;
 	text-align: center;
 
@@ -63,7 +63,7 @@ nav {
 
 	a {
 		color: $brand-secondary;
-		font-size: .75rem;
+		font-size: .875rem;
 		font-weight: bold;
 		flex-wrap: nowrap;
 		letter-spacing: .125em;
@@ -99,7 +99,7 @@ nav {
 	}
 
 	.logo {
-		font-size: 1em;
+		font-size: 1.5em;
 	  margin-bottom: 0;
 	}
 
@@ -107,7 +107,7 @@ nav {
 		justify-self: flex-end;
 
 		a {
-			padding: .5rem;
+			padding: .5rem 0;
 		}
 	}
 }
@@ -117,4 +117,10 @@ nav {
 	.logo {
 	  margin-bottom: 0;
 	}
+}
+
+@media only screen and (orientation: landscape) {
+  .logo {
+    font-size: 1rem;
+  }
 }

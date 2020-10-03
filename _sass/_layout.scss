@@ -20,7 +20,7 @@ body {
 
 .body-content {
   flex-grow: 1;
-  margin-top: 5rem;
+  margin-top: 70px;
 }
 
 .projects {
@@ -32,26 +32,23 @@ body {
   }
 }
 
-@media (orientation: landscape) {
-  .body-content{
-    margin-top: 60px;
-  }
-	h1 {
-		font-size: 1rem;
-	}
-}
-
 @media (min-width: 768px) {
   .projects {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 @media (min-width: 1200px) {
 
 }
-
 @media only screen and (orientation: landscape) {
+  .body-content{
+    margin-top: 60px;
+  }
 
+  .projects {
+    margin-left: -1.875rem;
+    margin-right: -1.875rem;
+  }
 }

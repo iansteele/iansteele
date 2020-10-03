@@ -3,7 +3,7 @@
 --------------------------- */
 header {
   background: $brand-primary;
-  padding: $spacing--s $spacing--l;
+  padding: $spacing--s $spacing--m;
 }
 
 .hero {
@@ -95,7 +95,7 @@ header {
   header,
   .hero,
   footer{
-    padding: $spacing--m $spacing--l;
+    padding: $spacing--m $spacing--m;
   }
 
   .hero {
