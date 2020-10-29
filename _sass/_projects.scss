@@ -162,6 +162,31 @@ a.project{
 	}
 }
 
+.project-stats {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+
+	.stats-item {
+		margin-bottom: $spacing--m;
+		flex-grow: 1;
+		text-align: center;
+	}
+
+	h2 {
+		color: $white;
+	}
+
+	p {
+		color: $brand-secondary;
+		font-weight: bold;
+		font-size: .875rem;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+}
+
 .section {
 	margin-bottom: calc(#{$spacing--xl} + #{$spacing--m});
 	margin-top: calc(#{$spacing--xl} + #{$spacing--m});
@@ -200,6 +225,12 @@ a.project{
 	display: flex;
 	flex-direction: column;
 	margin-bottom: rvr(2);
+}
+@include media-breakpoint-up(sm) {
+	.project-stats {
+		flex-direction: row;
+		margin: 3rem auto 3rem auto;
+	}
 }
 
 @media (min-width: 768px) {

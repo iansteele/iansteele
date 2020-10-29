@@ -19,7 +19,7 @@
           {%- assign sorted_projects = site.projects | sort: 'order' -%}
           {%- for project in sorted_projects -%}
           {%- if project.url -%}
-            <div class="col-md-6 col-xl-3">
+            <div class="col-md-6 col-xl-4">
               <a href="{{ project.url }}" class="project">
                 <img class="project-thumbnail" src="{{ project.thumbnail}}" alt="">
                  <!-- <span class="project_thumbnail-description">
