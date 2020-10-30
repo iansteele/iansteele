@@ -2,9 +2,11 @@ header {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	position: fixed;
+	padding: 1rem;
+	position: sticky;
 	text-align: center;
 	text-transform: uppercase;
+	top: 0;
 	width: 100%;
 	z-index: 10;
 }
@@ -19,7 +21,7 @@ footer {
 	color: $white;
 	display: flex;
 	fill: $white;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: .5rem 0;
 	text-align: center;
 
