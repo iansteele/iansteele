@@ -134,10 +134,11 @@ a.project{
 }
 
 .project_title {
-	font-size: 2rem;
+	font-size: 3.5rem;
 	font-weight: bold;
-	line-height: 1.5;
+	line-height: 1.125em;
 	margin: 0;
+	margin-bottom: 1rem;
 }
 
 .project_subtitle {
@@ -192,12 +193,12 @@ a.project{
 	margin-top: calc(#{$spacing--xl} + #{$spacing--m});
 
 	h3 {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .125em;
 		font-weight: bold;
 		margin-bottom: $spacing--l;
-		color: $brand-secondary;
+		color: $white;
 	}
 
 	h3:before {
@@ -234,10 +235,6 @@ a.project{
 }
 
 @media (min-width: 768px) {
-
-	.project_title {
-		font-size: 3rem;
-	}
 
 	.section {
 		h3 {

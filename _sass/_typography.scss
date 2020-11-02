@@ -16,6 +16,7 @@ h3 {
 
 p {
 	font-size: 1.25rem;
+	line-height: 1.75em;
 	margin-bottom: 1rem;
 }
 
@@ -26,10 +27,10 @@ p {
 .headline {
 	color: $white;
 	font-family: $font-display;
-	font-size: 2em;
+	font-size: calc(3.6vh + 1rem);
 	font-weight: 700;
-	letter-spacing: .25rem;
-	line-height: 1.325;
+	line-height: 1.5em;
+	text-align: center;
 
 	a {
 		color: $brand-secondary;
@@ -69,7 +70,7 @@ p {
 @media (min-width: 768px){
 
 	.headline {
-		font-size: 3rem;
+		// font-size: 3rem;
 		text-align: left;
 		margin-left: 0;
 	}
@@ -86,7 +87,7 @@ p {
 @media (min-width: 768px){
 
 	.headline {
-		font-size: 3rem;
+		// font-size: 3rem;
 		text-align: left;
 	}
 
@@ -103,7 +104,7 @@ p {
 @media (min-width: 992px){
 
 	.headline {
-		font-size: 3rem;
+		// font-size: 3rem;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: left;
@@ -114,7 +115,7 @@ p {
 
 	.headline {
 		text-align: center;
-		font-size: 4rem;
+		// font-size: 4rem;
 	}
 
 }

@@ -2,12 +2,11 @@ header {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	padding: 1rem;
+	padding: .5rem 1rem;
 	position: sticky;
 	text-align: center;
 	text-transform: uppercase;
 	top: 0;
-	width: 100%;
 	z-index: 10;
 }
 
@@ -65,7 +64,7 @@ nav {
 
 	a {
 		color: $brand-secondary;
-		font-size: .875rem;
+		font-size: .75em;
 		font-weight: bold;
 		flex-wrap: nowrap;
 		letter-spacing: .125em;
@@ -86,6 +85,7 @@ nav {
 
 	header {
 		font-size: 1rem;
+		// padding: .5rem 2rem;
 	}
 
 	.logo h1 {
@@ -95,10 +95,6 @@ nav {
 }
 
 @media (min-width: 768px) {
-
-	header {
-		flex-direction: row;
-	}
 
 	.logo {
 		font-size: 1.125em;
