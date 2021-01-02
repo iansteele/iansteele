@@ -27,7 +27,7 @@ p {
 .headline {
 	color: $white;
 	font-family: $font-display;
-	font-size: calc(3.6vh + 1rem);
+	font-size: clamp(100%, calc(1rem + 2vw), 80px);
 	font-weight: 700;
 	line-height: 1.5em;
 	text-align: center;

@@ -189,8 +189,8 @@ a.project{
 }
 
 .section {
-	margin-bottom: calc(#{$spacing--xl} + #{$spacing--m});
-	margin-top: calc(#{$spacing--xl} + #{$spacing--m});
+	margin-bottom: calc(5em + #{$spacing--m});
+	margin-top: calc(5em + #{$spacing--m});
 
 	h3 {
 		font-size: 1.5rem;
