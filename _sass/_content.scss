@@ -34,8 +34,7 @@ header {
   }
 
   h1 {
-    max-width: 1080px;
-    margin-bottom: 1em;
+    // margin-bottom: 1em;
     .footnote {
       position: relative;
       &:after {
@@ -101,6 +100,7 @@ header {
   .hero {
     min-height: 60vh;
     max-height: 800px;
+    text-align: center;
   }
 
   .main-wrapper {

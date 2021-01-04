@@ -139,6 +139,7 @@ a.project{
 	line-height: 1.125em;
 	margin: 0;
 	margin-bottom: 1rem;
+	margin-top: $spacing--m;
 }
 
 .project_subtitle {
@@ -180,10 +181,12 @@ a.project{
 	}
 
 	p {
-		color: $brand-secondary;
+		color: $light-gray;
 		font-weight: bold;
 		font-size: .875rem;
 		letter-spacing: 1px;
+		margin-left: auto;
+		margin-right: auto;
 		text-transform: uppercase;
 	}
 }
@@ -230,7 +233,7 @@ a.project{
 @include media-breakpoint-up(sm) {
 	.project-stats {
 		flex-direction: row;
-		margin: 3rem auto 3rem auto;
+		margin: 5rem auto 3rem auto;
 	}
 }
 

@@ -20,12 +20,12 @@ body {
 
 .body-content {
   flex-grow: 1;
-  margin-top: 3rem;
 }
 
 .projects {
   margin-bottom: $spacing--m;
   margin-top: $spacing--m;
+  max-width: 1400px;
 
   .project {
     margin-bottom: 1rem;
@@ -37,6 +37,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .projects {
+    margin: $spacing--m auto;
+  }
 
 }
 @media only screen and (orientation: landscape) {
