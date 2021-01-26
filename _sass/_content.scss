@@ -70,7 +70,6 @@ header {
 
   p {
     margin-bottom: $spacing--s;
-    width: 100%;
   }
 
   .btn {
@@ -87,6 +86,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    white-space: nowrap;
   }
 }
 
