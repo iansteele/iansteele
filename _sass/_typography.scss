@@ -35,7 +35,7 @@ p {
 	font-size: clamp(100%, calc(2.5rem + 2vw), 80px);
 	font-weight: 700;
 	margin-bottom: 1rem;
-	text-align: left;
+	text-align: center;
 
 	a {
 		color: $brand-secondary;
@@ -71,25 +71,7 @@ p {
 @media (min-width: 768px){
 
 	.headline {
-		// font-size: 3rem;
-		text-align: left;
-		margin-left: 0;
-	}
-
-	.callout {
-		font-size: 2rem;
-	}
-
-	p {
-		margin-bottom: 1em;
-	}
-}
-
-@media (min-width: 768px){
-
-	.headline {
 		font-size: clamp(100%, calc(1rem + 4vw), 80px);
-		text-align: left;
 	}
 
 	.callout {
@@ -106,10 +88,8 @@ p {
 @media (min-width: 992px){
 
 	.headline {
-		// font-size: 3rem;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: left;
 	}
 }
 

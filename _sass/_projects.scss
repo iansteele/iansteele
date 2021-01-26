@@ -3,7 +3,7 @@
 //--------------------------
 
 .project {
-	border-radius: .5em;
+	border-radius: 1em;
 	box-shadow: rgba(0,0,0,.1) 0 .25rem 1em 0;
 	position: relative;
 	overflow: hidden;
@@ -268,6 +268,13 @@ a.project{
 			max-width: 100%;
 			margin: $spacing--m;
 			width: 450px;
+		}
+	}
+
+	.flex-images {
+		display: flex;
+		img {
+			width: auto;
 		}
 	}
 }

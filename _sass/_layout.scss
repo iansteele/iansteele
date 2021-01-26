@@ -20,12 +20,14 @@ body {
 
 .body-content {
   flex-grow: 1;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .projects {
   margin-bottom: $spacing--m;
   margin-top: $spacing--m;
-  max-width: 1400px;
+  max-width: 1660px;
 
   .project {
     margin-bottom: 1rem;

@@ -1,6 +1,7 @@
 /* --------------------------
   Base Styles
 --------------------------- */
+
 header {
   background: $brand-primary;
   padding: $spacing--s $spacing--m;
@@ -12,9 +13,9 @@ header {
   justify-content: center;
   color: $white;
   min-height: 61.8vh;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 3rem;
   position: relative;
+  text-align: center;
 
   .caret {
     border-left: $spacing--s solid transparent;
@@ -28,9 +29,13 @@ header {
     width: 0;
   }
 
-  img {
-    max-width: 1080px;
-    margin: 2em auto 0 auto;
+  .its-me {
+    border-radius: 14em;
+    margin-bottom: $spacing--l;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 160px;
+    width: 25%;
   }
 
   h1 {
@@ -60,7 +65,7 @@ header {
 .footer {
   display: flex;
   flex-direction: column;
-  padding: $spacing--xl $spacing--m;
+  padding: $spacing--xl $spacing--l;
   text-align: center;
 
   p {
@@ -69,7 +74,6 @@ header {
   }
 
   .btn {
-    border-radius: 2rem;
     margin-bottom: $spacing--m;
     width: fit-content;
   }
@@ -92,15 +96,14 @@ header {
 
 @media screen and (min-width: 768px) {
   header,
-  .hero,
   footer{
-    padding: $spacing--m $spacing--m;
+    padding: $spacing--m $spacing--l;
   }
 
   .hero {
     min-height: 60vh;
     max-height: 800px;
-    text-align: center;
+    padding-bottom: 3rem;
   }
 
   .main-wrapper {
@@ -111,10 +114,9 @@ header {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 3rem;
 
     p {
-      font-size: 1rem;
+      margin-bottom: 0;
       margin-right: 1rem;
     }
 
@@ -136,7 +138,6 @@ header {
   .hero{
 
     img {
-      margin-top: 5rem;
       max-width: 1200px;
     }
 
