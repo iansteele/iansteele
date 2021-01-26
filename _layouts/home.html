@@ -20,7 +20,7 @@
       	<div class="projects row" id="work">
           {%- assign sorted_projects = site.projects | sort: 'order' -%}
           {%- for project in sorted_projects -%}
-          {%- if project.url -%}
+          {%- if project.url and project.visible== 1 -%}
             <div class="col-md-6 col-xl-4">
               <a href="{{ project.url }}" class="project">
                 <img class="project-thumbnail" src="{{ project.thumbnail}}" alt="">
